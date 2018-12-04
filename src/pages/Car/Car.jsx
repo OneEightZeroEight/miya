@@ -3,9 +3,6 @@ import React , {Component} from 'react';
 
 import Hfooter from '../../components/Hfooter.jsx';
 // import Hsearch from '../Home/Hsearch.jsx';
-
-import '../.././styles/car.scss';
-
 class Car extends Component{
     constructor(props){
         super(props);
