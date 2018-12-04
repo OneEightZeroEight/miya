@@ -1,0 +1,131 @@
+@import './font-awesome.css';
+*{
+  font-size: .426667rem;
+  padding:0;
+  margin:0;
+}
+li{
+  list-style: none;
+  
+} 
+.car{
+  background: #ececec;
+  font-family: '微软雅黑';
+  
+  .container{
+
+    header{
+      padding: 0 .266667rem;
+      background: #ff4e88; 
+      height:1.173333rem;
+      color:white;
+      line-height: 1.173333rem;
+      span{
+        font-size: 0.533333rem;
+      }
+      display: flex;
+      justify-content: space-between;
+      i{
+        font-size: .64rem;
+        line-height: 1.173333rem;
+      }
+    }
+  
+    .store{
+      background: #fff;
+      height: 1.173333rem;
+      line-height: 1.173333rem;
+      padding: 0 .266667rem;
+      border-bottom: 1px solid #ccc;
+    }
+    .goodList{
+      background: white;
+      padding: .32rem .266667rem;
+      display: flex;
+      height: 2.133333rem;
+      box-sizing: border-box;
+      line-height: 1rem;
+      img{
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+      button,input[type="text"]{
+        line-height: .8rem;
+        text-align: center;
+        width: .8rem;
+        height: .8rem;
+        box-sizing: border-box;
+        background: white;
+        border: 1px solid #ccc;
+  
+      }
+      .count{
+        display: flex;
+        flex-flow: column;
+        height: 1.6rem;
+        span{
+          height: .533333rem;
+          line-height: .533333rem;
+        }
+        li{
+          display: flex;
+        }
+        .price{
+          display: flex;
+          nth-child(1){
+            flex : 3;
+          }
+          nth-child(2){
+            flex : 1;
+          }
+          nth-child(1){
+            flex : 1;
+          }
+          color: #fa4b9b;
+        }
+      }
+       
+    }
+    .del{
+      height: 1.173333rem;
+      background: #fff;
+      margin-top: 1.066667rem;
+      line-height: 1.173333rem;
+      text-align: center;
+    }
+    .price{
+      display: flex;
+      justify-content: space-between;
+      width: 6.933333rem;
+    }
+    .footer{
+      width: 10rem;
+      position: fixed;
+      bottom: 1.6rem;
+
+      padding: 0 0 0 .266667rem;
+      height: 1.44rem;
+      display: flex;
+      justify-content: space-between;
+      line-height: 1.44rem;
+      .total{
+        line-height: .72rem;
+        color: #f34fa1;
+        .explain{
+          color:#999;
+          font-size: 12px;
+        }
+      }
+      button{
+        color: white;
+        background-color: #fa4b9b;
+        height: 1.44rem;
+        border: none;
+        width: 2.666667rem;
+      }
+    } 
+  } 
+  
+
+  
+}

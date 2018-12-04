@@ -1,0 +1,145 @@
+//引入图标
+@import "../../staic/css/font-awesome.css";
+
+//引入banner样式
+@import "../../../node_modules/swiper/dist/css/swiper.min.css";
+
+
+/*----------------------首页头部-----------------*/
+.z_sea{
+    width: 10rem;
+    height: 1.066667rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .z_title{
+        font-size: .4rem;
+        color: #333;
+        font-weight: bold;
+
+        span{
+            color: #F94B9C;
+        }
+    }
+    .kong{
+        width: 1.066667rem ;
+        height: 1.066667rem;
+        font-size: .4rem;
+        text-align: center;
+        line-height: 1.066667rem;
+        color: #F94B9C;
+        
+    }
+    
+}
+
+/*-----------------------首页轮播图--------------*/
+.swiperLun{
+    width: 10rem;
+    height: 3.626667rem;
+    .swiper-wrapper{
+        .swiper-slide{
+            width: 10rem;
+            height: 3.626667rem;
+        }
+
+    }
+}
+
+
+
+
+
+/*-----------------------限时秒杀区--------------*/
+.z_secSome{
+
+    .z_seckill{
+        display: flex;
+        justify-content: center;
+        background: #fff;
+        
+        .heaSeckill{
+            width: 9.466667rem;
+            height: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: .133333rem;
+            h3{
+                font-weight: bold;
+    
+                span{
+                    width: 20px;
+                    height: 20px;
+                    color: #888;
+                    font-size: 10px;
+                    text-align: center;
+                    line-height: 20px;
+                    border-left: 1px solid #888;
+                    margin-left: 5px;
+                    padding-left: 5px;
+                }
+            }
+            .secSome{
+                font-size: .34667rem;
+                color: #ea3983;
+            }
+            
+        }
+    }
+    .z_secTime{
+        width: 10rem;
+        height: 1.6rem;
+        overflow: hidden;
+        .zswiperTime{
+            // box-sizing: border-box;
+            height: 1.993333rem;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            display: block;
+            overflow: auto;
+            ul{
+              
+                background-color: #fbfafb;
+                height: 1.2067rem;
+                line-height: 1.2;
+                color: #333;
+                z-index: 10;
+                list-style: none;
+                width: 28rem;
+                display: flex;
+                margin-left: -1.066667rem;
+                li{
+                     display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 1.1067rem;
+                    width: 2rem;
+                    -webkit-tap-highlight-color: rgba(0,0,0,0);
+                    
+                    .sec1{
+                        text-align: center;
+                        font-size: .3733rem;
+                        font-weight: 700;
+                        height: 0.48rem;
+                        margin: 0 auto 0.06rem auto;
+                        width: 1.5733rem;
+                    }
+                    .sec2{
+                        font-size: .26667rem;
+                        color: #999;
+                    }
+      
+                }
+        
+            }
+        }
+    }
+   
+   
+    
+    
+}
+
