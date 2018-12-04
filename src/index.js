@@ -11,8 +11,6 @@ import { Provider } from 'react-redux';
 // import './styles/App.css';
 import './styles/index.css';
 import './styles/base.css';
-
-
 import './styles/List.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';

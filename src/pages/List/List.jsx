@@ -5,7 +5,6 @@ import Hfooter from '../../components/Hfooter.jsx';
 import ListHeader from './ListHeader.jsx';
 import Listdetail from './Listdetail.jsx';
 import Lists from './Lists.jsx';
-// import '../../styles/List.scss';
 
 class List extends Component{
     constructor(props){

@@ -15,7 +15,7 @@ class Lists extends Component{
         return(
             <div>
                 <div style={{display:this.props.showlist.isShowlists?"block":"none"}}>
-                     <p>点击返回上一层</p>
+                     i奥迪就爱上了的完全破解打破阿瑟东；了阿三低价商品贩售
                 </div>
                
                 {/* <ListHeader></ListHeader> */}

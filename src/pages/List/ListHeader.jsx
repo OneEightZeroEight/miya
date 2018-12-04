@@ -36,8 +36,8 @@ class ListHeader extends Component {
                         </form>
                     </div>
                 </div>
-                {/*<div className="search_result" style={{ display: "none" }}></div>
-                 <div className="search_history">
+                <div className="search_result" style={{ display: "none" }}></div>
+                {/* <div className="search_history">
                             <section className="shBox">
                                 <h3 className="search_history1">热门搜索</h3>
                                 <ul>
@@ -54,7 +54,7 @@ class ListHeader extends Component {
     }
 }
 export default connect((state) => {
-    return state;
+    return state
 }, (dispatch) => {
     return {
         togglelist() {
