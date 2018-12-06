@@ -38,10 +38,10 @@ axios.interceptors.response.use((response) => {
 const store = createStore((state = {
     title: 'miya',
     showlist :{
-        isShowlists: true,
-        isShowlist : false
+        isShowlists: false,
+        isShowlist : true,
+
     },
-    aa:[]
     
 }, action) => {
     switch (action.type) {
