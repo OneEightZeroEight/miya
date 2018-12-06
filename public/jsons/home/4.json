@@ -1,0 +1,321 @@
+{
+    "p_info": {
+        "pid": "77474",
+        "tab_time": "09:00",
+        "start_time": "2018/12/06 09:00:00",
+        "end_time": "2018/12/07 08:59:59",
+        "label_id": "1",
+        "image_index": "",
+        "seckill_text": "更多秒杀",
+        "param": "2675629-2674641-2844708-2437538-2852429-2736089-2675333-2675109-2518496-2520613-2517767-2899942-2628755-2675332-2675631-2953647-2953655-2950001-2852118-2950003-2950005"
+    },
+    "item_list": [
+        {
+            "item_id": "2675629",
+            "title": "韩国AHC水乳套装",
+            "short_info": "让你不做美容也能润到掐出水！",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/06/18/78/e6/78e68fa7ac3672e9accaddec6cd5656a080624565.jpg",
+            "active_price": "165.00",
+            "market_price": "287.00",
+            "warehouse_type": "13",
+            "brand_id": "2115",
+            "warehouse": [],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2674641",
+            "title": "AHC神仙水乳套盒",
+            "short_info": "多重植萃透明质酸补充水分",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/06/18/46/97/469704f74f9752b52bf831a146074868101411670.jpg",
+            "active_price": "155.00",
+            "market_price": "373.00",
+            "warehouse_type": "13",
+            "brand_id": "2115",
+            "warehouse": [],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2844708",
+            "title": "安娜贝拉面膜+VC爽肤水",
+            "short_info": "补水搭档 去除黑色素 淡化痘印",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2018/06/29/dc/a9/dca94786b193025cfe67e3c5b1fd1af6805036166.jpg",
+            "active_price": "69.00",
+            "market_price": "180.00",
+            "warehouse_type": "5",
+            "brand_id": "7181",
+            "warehouse": [
+                {
+                    "type": "5",
+                    "text": "韩国直邮",
+                    "name": "hg"
+                }
+            ],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2437538",
+            "title": "韩国悦诗风吟水乳套盒",
+            "short_info": "补水保湿 水感透润肌肤",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/03/15/15/9f/159f016adfffed8663e56ba5b2fa192b028373303.jpg",
+            "active_price": "149.00",
+            "market_price": "399.00",
+            "warehouse_type": "5",
+            "brand_id": "1775",
+            "warehouse": [
+                {
+                    "type": "5",
+                    "text": "韩国直邮",
+                    "name": "hg"
+                }
+            ],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2852429",
+            "title": "韩国雪花秀滋阴水乳6件套",
+            "short_info": "吸取大地之精华 唤醒肌肤之灵气",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2018/06/04/97/e2/97e24d8979ed64bc8e67631b33222bf4929002058.jpg",
+            "active_price": "549.00",
+            "market_price": "699.00",
+            "warehouse_type": "13",
+            "brand_id": "1781",
+            "warehouse": [],
+            "activity_string": false
+        },
+        {
+            "item_id": "2736089",
+            "title": "倩碧水嫩磁场三件套",
+            "short_info": "肌肤饱满水润 舒缓细纹",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/03/07/b5/94/b594538adb6ae2aa522323c5d5a756fa304107880.jpg",
+            "active_price": "399.00",
+            "market_price": "590.00",
+            "warehouse_type": "5",
+            "brand_id": "2470",
+            "warehouse": [
+                {
+                    "type": "5",
+                    "text": "香港直邮",
+                    "name": "xg"
+                }
+            ],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2675333",
+            "title": "韩国呼吸惊喜水乳套",
+            "short_info": "让肌肤再次透明靓丽。",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2017/07/14/1a/9c/1a9c56bdbbc3407b91ad346ea5e78059175017145.jpg",
+            "active_price": "539.00",
+            "market_price": "936.00",
+            "warehouse_type": "13",
+            "brand_id": "2483",
+            "warehouse": [],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2675109",
+            "title": "SK-II体验装4件套",
+            "short_info": "逆转肌龄，女性挚爱",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2017/08/14/b0/23/b023245b5e7f7d455a3fbe52050b717c810314513.jpg",
+            "active_price": "549.00",
+            "market_price": "888.00",
+            "warehouse_type": "13",
+            "brand_id": "2116",
+            "warehouse": [],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2518496",
+            "title": "后拱辰享阴阳6件套",
+            "short_info": "温柔呵护，平衡滋养",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2017/09/19/af/48/af4806ffb9b2ff52621fe308b3167cee090438807.jpg",
+            "active_price": "699.00",
+            "market_price": "1147.00",
+            "warehouse_type": "12",
+            "brand_id": "1778",
+            "warehouse": [],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2520613",
+            "title": "韩国后水妍系列水乳霜3件套",
+            "short_info": "保湿补水不油腻，提升弹力",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/11/22/26/45/26457002c26b2f3e750b24c03d6223fd636897871.jpg",
+            "active_price": "688.00",
+            "market_price": "1899.00",
+            "warehouse_type": "11",
+            "brand_id": "1778",
+            "warehouse": [],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2517767",
+            "title": "兰芝水库凝肌水乳2件套盒",
+            "short_info": "平衡保湿，水嫩柔滑",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2017/09/19/1e/62/1e6221e201c34075e2cb6f48da4035f0016075993.jpg",
+            "active_price": "278.00",
+            "market_price": "398.00",
+            "warehouse_type": "11",
+            "brand_id": "1776",
+            "warehouse": [],
+            "activity_string": false
+        },
+        {
+            "item_id": "2899942",
+            "title": "安娜贝拉海藻滋养五件套",
+            "short_info": "新品上市 爱美就要趁\"藻\"",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/09/05/1d/6d/1d6d66575d13af73d64405d5f1099ee5426732827.jpg",
+            "active_price": "168.00",
+            "market_price": "380.00",
+            "warehouse_type": "5",
+            "brand_id": "8718",
+            "warehouse": [
+                {
+                    "type": "5",
+                    "text": "韩国直邮",
+                    "name": "hg"
+                }
+            ],
+            "activity_string": false
+        },
+        {
+            "item_id": "2628755",
+            "title": "韩国后拱辰享雪玉凝水乳霜套盒",
+            "short_info": "让肌肤似雪般凝亮透白",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2017/12/18/ae/d7/aed76b0eec6e4f84788c2bd56aa0fb97861897057.jpg",
+            "active_price": "759.00",
+            "market_price": "1080.00",
+            "warehouse_type": "11",
+            "brand_id": "1778",
+            "warehouse": [],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2675332",
+            "title": "日本雪肌精水乳套装",
+            "short_info": "修复粗糙、无光泽的肌肤肌理。",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2017/07/14/04/d8/04d89a271d33fb1bff455b3ecd608aec166479926.jpg",
+            "active_price": "388.00",
+            "market_price": "765.00",
+            "warehouse_type": "13",
+            "brand_id": "1141",
+            "warehouse": [],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2675631",
+            "title": "法国兰蔻根源补养三件套",
+            "short_info": "让肌肤倍添健康光采",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2017/05/09/77/d4/77d49ae1c5732c8fe476f3db6e175e4f165605429.jpg",
+            "active_price": "699.00",
+            "market_price": "1676.00",
+            "warehouse_type": "13",
+            "brand_id": "2643",
+            "warehouse": [],
+            "activity_string": false
+        },
+        {
+            "item_id": "2953647",
+            "title": "雅诗兰黛超值圣诞套盒",
+            "short_info": "超值护肤三件套圣诞套盒",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/10/25/2d/08/2d08b885b79ea74102c9452116b663ce522962462.jpg",
+            "active_price": "869.00",
+            "market_price": "1200.00",
+            "warehouse_type": "5",
+            "brand_id": "2586",
+            "warehouse": [
+                {
+                    "type": "5",
+                    "text": "美国直邮",
+                    "name": "mg"
+                }
+            ],
+            "activity_string": false
+        },
+        {
+            "item_id": "2953655",
+            "title": "雅诗兰黛护肤彩妆圣诞套盒",
+            "short_info": "热销单品超值圣诞套盒",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/11/01/5d/d7/5dd7e3b8ed0eeed20350f3f6c5ccb851717165546.jpg",
+            "active_price": "999.00",
+            "market_price": "1400.00",
+            "warehouse_type": "5",
+            "brand_id": "2586",
+            "warehouse": [
+                {
+                    "type": "5",
+                    "text": "美国直邮",
+                    "name": "mg"
+                }
+            ],
+            "activity_string": false
+        },
+        {
+            "item_id": "2950001",
+            "title": "雅诗兰黛菁萃紧颜系列套装",
+            "short_info": "限量套装 奢宠白金 基地自愈",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2018/11/03/35/01/3501435a4ef927e81fca3beae165c450809282255.jpg",
+            "active_price": "1409.00",
+            "market_price": "1950.00",
+            "warehouse_type": "5",
+            "brand_id": "2586",
+            "warehouse": [
+                {
+                    "type": "5",
+                    "text": "法国直邮",
+                    "name": "fg"
+                }
+            ],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2852118",
+            "title": "雪花秀滋阴护肤十件套",
+            "short_info": "调和肌肤平衡 倾注盈润光泽",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/06/04/d0/c1/d0c13a3f819b38862b8122c981d93768947805277.jpg",
+            "active_price": "1049.00",
+            "market_price": "1699.00",
+            "warehouse_type": "13",
+            "brand_id": "1781",
+            "warehouse": [],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2950003",
+            "title": "娇兰赋妍紧致面霜50ml限量套装",
+            "short_info": "面霜+柔肤水+眼霜 重焕肌肤",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/11/03/ae/ad/aead23e300be5c4bfc0d954690057f90483473011.jpg",
+            "active_price": "955.00",
+            "market_price": "1220.00",
+            "warehouse_type": "5",
+            "brand_id": "2338",
+            "warehouse": [
+                {
+                    "type": "5",
+                    "text": "法国直邮",
+                    "name": "fg"
+                }
+            ],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2950005",
+            "title": "雅诗兰黛多效智妍面霜套装",
+            "short_info": "2018限量款 少量库存 先到先得",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2018/11/04/a7/0f/a70f0797fc0d01aababfd2e9062745ea691829822.jpg",
+            "active_price": "809.00",
+            "market_price": "1050.00",
+            "warehouse_type": "5",
+            "brand_id": "2586",
+            "warehouse": [
+                {
+                    "type": "5",
+                    "text": "法国直邮",
+                    "name": "fg"
+                }
+            ],
+            "activity_string": "直降 "
+        }
+    ],
+    "relation_list": []
+}

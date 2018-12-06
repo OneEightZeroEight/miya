@@ -26,7 +26,10 @@ const store = createStore((state = {
     title: 'haha',
     showlist :{
         isShowlists: false,
-        isShowlist : true
+        isShowlist : true,
+        // home
+        isShowsec : [],
+
     }
     
 }, action) => {
@@ -36,7 +39,7 @@ const store = createStore((state = {
                 ...state,
                 showlist : action.showlist
             };
-        case 'add2':
+        case 'btnINs':
             return state;
         case 'add3':
             return state;

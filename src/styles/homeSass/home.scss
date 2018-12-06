@@ -126,11 +126,17 @@
                         margin: 0 auto 0.06rem auto;
                         width: 1.5733rem;
                     }
+                   
                     .sec2{
                         font-size: .26667rem;
                         color: #999;
                     }
       
+                }
+                li:nth-of-type(7){
+                    span{
+                        color: #ea3983 !important;
+                    }
                 }
         
             }
@@ -141,4 +147,400 @@
     
     
 }
+
+//商品
+.Secwrapper{
+    width: 10rem;
+    height: 8.133333rem;
+    background: #fff;
+    .Secslide{
+        width: 2.48rem;
+        height: 4.026667rem;
+    }
+}
+
+.secPic{
+    width: 2.213333rem;
+    height: 2rem;
+    .secImg{
+        width: 2.213333rem;
+        height: 2rem;
+    }
+}
+.secTitle{
+    margin-top: .26rem;
+    padding: 0 .06667rem;
+    font-size: .32rem;
+    line-height: 1.35;
+    height: .864rem;
+    overflow: hidden;
+    color: #444;
+}
+.secPrice{
+    margin-right: .06667rem;
+    color: #ea3983;
+    font-weight: 400;
+    font-size: .42667rem;
+}
+
+#secPage{
+    bottom: -3px;
+}
+
+/*-----------------------baby年龄推荐--------------*/
+
+.z_bady{
+    height: 200px;
+    background: #fff;
+    .HeaBaby{
+        background: #FBFBFB;
+        h3{
+            padding: 0 10px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            font-weight: normal;
+            padding-left: 10px;
+            display: inline;
+          
+        }
+        i{
+            color: greenyellow;
+            padding-left: 10px;
+        }
+    }
+    .BabyUnlike{
+        // padding: .26667rem 0 0 .26667rem;
+        div{
+            float: left;
+            margin: 0 .21333rem .18667rem 0;
+            width: 2.96rem;
+            height: 1.88rem;
+            overflow: hidden;
+            padding: .26667rem 0 0 .26667rem;
+            box-sizing: border-box;
+              
+
+            img{
+                width: 100%;
+            }
+           
+        }
+        .firstImg{
+            width: 3.04rem;
+            height: 3.946667rem;
+        }
+    }
+    
+}
+
+
+
+
+
+/*-----------------------Zgroup组件--------------*/
+.secGoods{
+    .heaGroup{
+        height: 1.066667rem;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        
+            .heaLt{
+                font-size: .48rem;      
+                margin-left: 5px;
+                color: #FF4A4A;
+                i{
+                    margin: 0 5px 0 5px;
+                    font-size: 16px;   
+                }
+                .bao{
+                    margin-left: 5px;
+                    display: inline-block;
+                    font-size: 12px; 
+                    width: 1.6rem;
+                    height: .533333rem;
+                    background: #FF4A4A;
+                    color: #fff;
+                    text-align: center;
+                    line-height: .533333rem;
+                    border-radius: .133333rem;
+                    b{
+                        font-weight: normal;
+                    }
+                }
+            
+            }
+            .heaRt{
+                font-size: .346667rem;
+                strong{
+                    color: #FF4A4A;
+                }
+            }
+    }
+}
+
+
+#pgroup{
+    margin-right: 8.24rem;
+    .secPic{
+        img{
+            width: 2.186667rem;
+            height: 2.186667rem;
+        }
+    }
+    p{
+        padding-top: 2px;
+    }
+    .secTitle{
+        font-size: .32rem;
+        line-height: 1.35;
+        height: .864rem;
+        overflow: hidden;
+        margin-top: .1067rem; 
+    }
+    .secPrice{
+        line-height: 1.3;
+        font-size: .2933rem;
+        color: #ff4a4a;
+        b{
+            margin-left: .0667rem;
+            font-size: 10px;
+            font-weight: 700;
+            font-style: normal;
+        }
+        
+    }
+    .secMarket{
+        line-height: 1.3;
+        font-size: .2667rem;
+        color: #999;
+    }
+}
+
+#dingwei{
+    position: relative;
+    background: #fff;
+    .bySome{
+        width: 1.813333rem;
+        height: 8.24rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-align: center;
+        line-height: 8.24rem;
+    
+    }
+}
+
+.btn-more{
+    display: block;
+    margin: .2667rem auto .2667rem;
+    width: 8.8667rem;
+    height: .96rem;
+    line-height: .96rem;
+    border-radius: .6667rem;
+    background-color: #ff4a4a;
+    text-align: center;
+    font-size: .4rem;
+    color: #fff;
+
+    span{
+        position: relative;
+        padding-right: .3733rem;
+    }
+}
+
+
+
+/*-----------------------   Zfooter --------------*/
+.z_recom{
+    .recomGood{
+        .m-title {
+            padding: 0 .266667rem;
+            height: 1.066667rem;
+            line-height: 1.066667rem;
+            font-size: .426667rem;
+            margin-top: .266667rem;
+            display: block;
+    
+            i{
+                color: #22A6EA;
+            }
+    
+            .float_r{
+                float: right;
+                margin-left: .186667rem;
+                font-size: .32rem;
+                color: #666;
+            }
+        }
+
+        .mt10{
+            margin-top: 10px;
+            background-color: #fff;
+            overflow: hidden;
+
+            .koubei_title {
+                text-align: center;
+                font-size: 12px;
+                padding: 15px 0 10px 0;
+                .aa{
+                    background: 0 0;
+                    text-decoration: none;
+                    -webkit-tap-highlight-color: transparent;
+                    color: #999;
+                }
+                p {
+                    color: #333333;
+                    font-size: 18px;
+                }
+            }
+            .small {
+                position: relative;
+                padding: .26667rem 0;
+                display: inline-block;
+                margin-left: 11px;
+
+                .smallwrap {
+                    overflow-x: hidden;
+                    display: flex;
+                    justify-content: space-around;
+
+                    .item {
+                        width: 2.9rem;
+                        min-width: 2.9rem;
+
+                        .img {
+                            width: 2.9rem;
+                            height: 2.9rem;
+                            border: none;
+                            overflow: hidden;
+                            min-height: 2.26667rem;
+                            background-color: #f0f0f0;
+                            position: relative;
+                            
+                            img{
+                                width: 100%;
+                                border: 0;
+                                vertical-align: top;
+                            }
+                            .ranking_icon {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                background: #ff1a3e;
+                                color: #ffffff;
+                                font-size: 11px;
+                                padding: 1px 2px;
+                                border-radius: 0 4px 4px 0;
+                                -webkit-border-radius: 0 4px 4px 0;
+                            }
+                            .free_shippingMark {
+                                width: auto;
+                                transform: translateX(-50%);
+                                margin-left: 0;
+                                padding: 0 0.1rem;
+                                white-space: nowrap;
+                                max-width: 3rem;
+
+                                display: inline-block;
+                                background: rgba(255,255,255,0.8);
+                                height: 17px;
+                                line-height: 17px;
+                                width: 30px;
+                                color: #f72283;
+                                border: 1px solid #f72283;
+                                border-radius: 8px;
+                                -webkit-border-radius: 8px;
+                                position: absolute;
+                                bottom: 5px;
+                                left: 50%;
+                                margin-left: -15px;
+                                font-size: 11px;
+                            }
+                        }
+                        .tit{
+                            display: block;
+                            
+                            overflow: hidden;
+                            height: 30px;
+                            margin-top: 7px;
+                            line-height: 1.3;
+                            color: #333;
+                            font-size: 12px;
+                        }
+                        .price {
+                            font-size: 14px;
+                            color: #fa4b9b;
+                        }
+                    }
+                }
+            }
+        }
+      
+    }
+    
+}
+
+.jia_some{
+    text-align: center;
+    line-height: .8rem;
+    margin-top: 10px;
+    span{
+        display: block;
+        width: 9.866667rem;
+        height: .8rem;
+        color: #ccc;
+    }
+}
+
+
+
+
+
+
+
+/*-----------------------   Zfooter --------------*/
+.pub{
+    width: 100%;
+    line-height: 2.5rem;
+    text-align: center;
+    color: #cecece;
+    margin-bottom: 65px;
+    a{
+        margin: 0 6px;
+        text-decoration: none !important;
+        color: #999999;
+        font-size: 13px;
+    }
+    p{
+        line-height: 2;
+        padding: 0 0.4rem;
+        font-size: 11px;
+    }
+    .line{
+
+    }
+    .download-footer{
+        position: relative;
+        margin-top: 20px;
+        line-height: 1;
+        img{
+            width: 100%;
+            vertical-align: middle;
+        }
+        a{
+            position: absolute;
+            width: 94px;
+            height: 100%;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+
+
+
 

@@ -21,7 +21,7 @@ function getTimes(){
         })
 };
 
-
+getTimes();
 
 
 const GridExample = () => (
