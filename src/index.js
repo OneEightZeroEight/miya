@@ -28,8 +28,9 @@ const store = createStore((state = {
     title: 'haha',
     showlist :{
         isShowlists: false,
-        isShowlist : true
-    }
+        isShowlist : true,
+
+    },
     
 }, action) => {
     switch (action.type) {

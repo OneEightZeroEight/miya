@@ -3,6 +3,11 @@ import React , {Component} from 'react';
 
 import Hfooter from '../../components/Hfooter.jsx';
 // import Hsearch from '../Home/Hsearch.jsx';
+
+import '../.././styles/car.scss'
+
+import Axios from 'axios'
+
 class Car extends Component{
     constructor(props){
         super(props);
@@ -185,9 +190,9 @@ class Car extends Component{
           <div className="car">
             <div className="container">
                 <header>
-                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  <i className="fa fa-angle-left" aria-hidden="true"></i>
                   <span>购物车</span>
-                  <i class="fa fa-home" aria-hidden="true"></i>
+                  <i className="fa fa-home" aria-hidden="true"></i>
                 </header>
                 <ul>
                   <li>
