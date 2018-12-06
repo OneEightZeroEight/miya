@@ -5,7 +5,7 @@ class Listdetaill extends Component {
     constructor(props) {
         super(props);
         this.props = props;
-        console.log(props);
+        // console.log(props);
         this.state = {
             listnav: 0,
             lists: [
@@ -125,7 +125,7 @@ class Listdetaill extends Component {
     }
 }
 export default connect((state) => {
-    console.log(state)
+    // console.log(state)
     return state;
 }, (dispatch) => {
     return {
