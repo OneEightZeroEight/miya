@@ -5,6 +5,7 @@
   "dependencies": {
     "@babel/core": "7.1.0",
     "@svgr/webpack": "2.4.1",
+    "antd-mobile": "^2.2.6",
     "antd-mobile-rn": "^2.3.1",
     "axios": "^0.18.0",
     "babel-core": "7.0.0-bridge.0",
@@ -47,6 +48,7 @@
     "react-cookies": "^0.1.0",
     "react-dev-utils": "^6.1.1",
     "react-dom": "^16.6.3",
+    "react-native": "^0.57.7",
     "react-redux": "^5.1.1",
     "react-router-dom": "^4.3.1",
     "redux": "^4.0.1",
@@ -122,6 +124,7 @@
     ]
   },
   "devDependencies": {
+    "babel-plugin-import": "^1.11.0",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
     "node-sass": "^4.10.0",

@@ -4,12 +4,16 @@ import React , {Component} from 'react';
 // import { AppRegistry } from 'react-native';
 // import Button from 'node_modules/antd-mobile-rn/lib/button';
 
-
+//引入模块
 import Hfooter from '../../components/Hfooter.jsx';
 import Hsearch from '../Home/Hsearch.jsx';
 import Zbanner from '../Home/Zbanner.jsx';
 import Zseckill from '../Home/Zseckill.jsx'
-import ZsecGoods from '../Home/ZsecGoods.jsx'
+import ZsecGoods from '../Home/ZsecGoods.jsx';
+// import GridExample from '../Home/ZsecGoods.jsx'
+
+
+
 
 
 class Index extends Component{
@@ -17,7 +21,7 @@ class Index extends Component{
 
         super(props);
         this.props = props;
-        // console.log(props);
+        console.log(props);
         this.state = {
             history:""
         }
@@ -36,6 +40,7 @@ class Index extends Component{
                 <Zbanner></Zbanner>
                 <Zseckill></Zseckill>
                 <ZsecGoods></ZsecGoods>
+                
                 <Hfooter ss={this.state.history}></Hfooter>
             </div>
         );

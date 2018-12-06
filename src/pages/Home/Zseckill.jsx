@@ -14,8 +14,8 @@ class Zseckill extends Component {
     getTimes() {
         React.axios.get('./jsons/times.json')
             .then((res) => {
-                // console.log(res);
-                // console.log(res.data);
+                console.log(res);
+                console.log(res.data);
                 this.setState({
                     dateTime:res.data
                 })
