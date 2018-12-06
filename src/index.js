@@ -42,6 +42,7 @@ const store = createStore((state = {
         isShowlist : true,
 
     },
+    aa:[]
     
 }, action) => {
     switch (action.type) {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import {connect}  from 'react-redux' ;
+import { connect } from 'react-redux';
 import '../../styles/Detail.scss';
 // import Icon from 'antd';
 // import jquery from 'jquery';
@@ -9,7 +9,7 @@ import TweenOne from 'rc-tween-one';
 import 'rc-banner-anim/assets/index.css';
 // const BgElement = Element.BgElement;
 
-import {  BackTop } from 'antd'; //引入 ant 
+import { BackTop } from 'antd'; //引入 ant 
 
 class Detail extends Component {
     constructor(props) {
@@ -18,11 +18,12 @@ class Detail extends Component {
         // console.log(props);
         this.state = {
             contentClass: "titleBar",
-            cur:0,
+            cur: 0,
+            showbox:'showblock1',
             title: [
-                {name:"商品详情",},
-                {name:"产品参数",},
-                {name:"问题咨询",}
+                { name: "商品详情", idx:0},
+                { name: "产品参数", idx:1},
+                { name: "问题咨询", idx:2}
             ]
         }
     }
@@ -51,7 +52,7 @@ class Detail extends Component {
         this.setState((prevState) => ({
             cur: index,
         }))
-        
+
     }
     render() {
         console.log(this.state);
@@ -117,7 +118,7 @@ class Detail extends Component {
                 <div className="detail-nameInfo">
                     <h4 className="title">
                         <a href="https://m.mia.com/s/b9881_typeb1.html" title="品牌：含章雅舍">
-                        {this.props.aa.parent_brand_name}               </a>
+                            {this.props.aa.parent_brand_name}               </a>
                         {this.props.aa.name}       </h4>
                     <div className="priceBox">
                         <div className="activity-price"></div>
@@ -148,24 +149,24 @@ class Detail extends Component {
                 </div>
                 {/* 商品信息 style={{position: "relative",top: "110px"}}*/}
                 <section className={this.state.contentClass} >
-                {
-                    (()=>{
-                        return this.state.title.map((item,index)=>{
-                            return    <div className={index === this.state.cur?"current":""} key={index}
-                            onClick={this.togglenav.bind(this,index)}
-                            > {item.name}</div> 
-                            
-                        })
-                    })()
-                }
-                    
-                   
+                    {
+                        (() => {
+                            return this.state.title.map((item, index) => {
+                                return <div className={index === this.state.cur ? "current" : ""} key={index}
+                                    onClick={this.togglenav.bind(this, index)}
+                                > {item.name}</div>
+
+                            })
+                        })()
+                    }
+
+
                 </section>
 
                 {/* 图片盒子 */}
                 <section className="proBox">
                     <div className="slideBox">
-                        <div className="showblock1" style={{ minHeight: "535px" }}>
+                        <div className={this.state.showbox} style={{ minHeight: "535px" }}>
                             <section className="w2 parameters">
                                 <div className="xq">
                                     <img src={this.props.aa.m_search_pic} alt="1" />
@@ -190,7 +191,7 @@ class Detail extends Component {
                             </section>
                         </div>
                         {/* 这个现在没用 */}
-                        <div className="showblock2" style={{ minHeight: "535px", display: "none" }}>
+                        <div className={this.state.showbox} style={{ minHeight: "535px", display: "none" }}>
                             <section className="w201506">
                                 <div className="w201506b parameters mt10">
                                     <p>
@@ -210,7 +211,7 @@ class Detail extends Component {
                             </section>
                         </div>
 
-                        <div className="showblock3" style={{ minHeight: "535px", display: "none" }}>
+                        <div className={this.state.showbox} style={{ minHeight: "535px", display: "none" }}>
                             <div className="QA">
                                 <dl>
                                     <dt className="Q">1、我如何购买？</dt>
@@ -315,8 +316,26 @@ class Detail extends Component {
                 <div>
                     <BackTop />
                     {/* <strong style={{ color: 'rgba(64, 64, 64, 0.6)' }}> gray </strong> */}
-                
+
                 </div>
+                {/* 底部APP */}
+                <footer className="pub" style={{height: "auto"}}>
+                    <div className="line"></div>
+                    <div className="download-footer app_down" id="bi-bottom" style={{display: "block"}}>
+                        <img src="https://img.miyabaobei.com/d1/p5/2016/11/14/01/e1/01e1de76f2290e4e2adc1133d95b4c31192884044.jpg" alt='' />
+                        <a className="btn mia-downApp" href="https://itunes.apple.com/cn/app/mi-ya-bao-bei-zhong-guo-zui/id973366293?mt=8" alt="立即下载" > </a>
+                    </div>
+                    <p style={{paddingTop: "0.5rem" ,fontSize: "13px"}}>
+                        <a href="https://www.mia.com" id="backToWeb" title="点击返回电脑版">电脑版首页</a> | 
+                        <a href="https://m.mia.com">蜜芽触屏版首页</a> | 
+                        <a href="https://www.mia.com/help-34.html">关于我们</a> | 
+                        <a href="https://m.mia.com/special/module/index/32243/xcx/ ">营业执照</a></p>
+                    <p>通过本网站直接或者间接地推销商品或者服务的商业宣传活动均属“广告”</p>
+                    <p>Copyright © 2018 </p>
+                    <p>北京花旺在线商贸有限公司 Mia.com 保留一切权利</p>
+                </footer>
+
+
 
                 {/* 底部购物车 */}
                 <div className="detail-fixedCart fixed_cart_options">
@@ -338,7 +357,7 @@ class Detail extends Component {
                         <button href="javascritp:;" className="w50 js_tuangou" >
                             <p>￥{this.props.aa.real_price} </p>   <p>2人拼团</p>
                         </button>
-                        <button href="javascritp:;" className="groupon_btn js_tuangou _free_open"  data-gid="869464">
+                        <button href="javascritp:;" className="groupon_btn js_tuangou _free_open" data-gid="869464">
                             0元开团<br />
                             满5人 团长免单
                         </button>
@@ -350,15 +369,15 @@ class Detail extends Component {
         )
     }
 }
-export default connect((state)=>{
+export default connect((state) => {
     console.log(state);
     return state;
-},(dispatch)=>{
+}, (dispatch) => {
     return {
-        getdetails(){
+        getdetails() {
             dispatch({
-                type:'getdetails',
-                aa:[]
+                type: 'getdetails',
+                aa: []
             })
         }
     }

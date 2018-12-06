@@ -329,6 +329,12 @@
         }
 
     }
+    .show{
+        display: block;
+    }
+    .hidden{
+        display: none;
+    }
 }
 
 
@@ -402,6 +408,43 @@
         }
     }
 }
+//底部APP css
+.pub {
+    // height: 40px;
+    width: 100%;
+    line-height: 2.5rem;
+    text-align: center;
+    color: #cecece;
+    .download-footer {
+        position: relative;
+        margin-top: 20px;
+        line-height: 1;
+        img {
+            width: 100%;
+            vertical-align: middle;
+        }
+        a {
+            position: absolute;
+            width: 94px;
+            height: 100%;
+            top: 0;
+            right: 0;
+        }
+    }
+    p {
+        line-height: 2;
+        padding: 0 0.4rem;
+        font-size: .293333rem;
+        a {
+            margin: 0 6px;
+            text-decoration: none !important;
+            color: #999999;
+            font-size: 13px;
+        }
+    }
+
+}
+
 
 // 底部css
 .detail-fixedCart {
