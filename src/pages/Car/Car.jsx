@@ -3,6 +3,11 @@ import React , {Component} from 'react';
 
 import Hfooter from '../../components/Hfooter.jsx';
 // import Hsearch from '../Home/Hsearch.jsx';
+
+import '../.././styles/car.scss'
+
+import Axios from 'axios'
+
 class Car extends Component{
     constructor(props){
         super(props);
@@ -68,7 +73,7 @@ class Car extends Component{
 
     selectAll(){
       let goodList = this.state.goodList
-      if(this.state.allSelect == false){      
+      if(this.state.allSelect === false){      
         goodList.forEach((item,idx)=>{
           item.select = true
         })
@@ -123,7 +128,7 @@ class Car extends Component{
         this.getNum()
         goodList.forEach((item,idx)=>{
           console.log(item.select)
-          if(item.select == false){
+          if(item.select === false){
             this.setState({
               allSelect : false
             })
@@ -185,9 +190,9 @@ class Car extends Component{
           <div className="car">
             <div className="container">
                 <header>
-                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  <i className="fa fa-angle-left" aria-hidden="true"></i>
                   <span>购物车</span>
-                  <i class="fa fa-home" aria-hidden="true"></i>
+                  <i className="fa fa-home" aria-hidden="true"></i>
                 </header>
                 <ul>
                   <li>
@@ -236,7 +241,7 @@ class Car extends Component{
                     
                   </li>
                   <li className="del">
-                    <i class="fa fa-trash" aria-hidden="true"></i><span onClick={this.remove.bind(this)}>删除选择商品</span>
+                    <i className="fa fa-trash" aria-hidden="true"></i><span onClick={this.remove.bind(this)}>删除选择商品</span>
                   </li>
 
                   

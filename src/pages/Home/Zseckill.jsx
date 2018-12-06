@@ -110,7 +110,6 @@ class Zseckill extends Component {
                 <div className="z_secTime">
                     <div className=" zswiperTime">
                         <ul 
-                        // style={{width: '28rem', transitionTimingFunction: 'cubic-bezier(0.1, 0.57, 0.1, 1)', transitionDuration: '0ms', transform: 'translate(-450px, 0px) translateZ(0px)'}}
                         >
                            {
                                (()=>{

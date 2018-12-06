@@ -151,7 +151,7 @@
 //商品
 .Secwrapper{
     width: 10rem;
-    height: 8.133333rem;
+    height: 9.6rem;
     background: #fff;
     .Secslide{
         width: 2.48rem;
@@ -291,6 +291,7 @@
     }
     p{
         padding-top: 2px;
+        margin: 0;
     }
     .secTitle{
         font-size: .32rem;
@@ -315,6 +316,9 @@
         line-height: 1.3;
         font-size: .2667rem;
         color: #999;
+        del{
+            font-size: .2667rem;
+        }
     }
 }
 

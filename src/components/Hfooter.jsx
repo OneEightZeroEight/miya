@@ -4,9 +4,8 @@ import { connect } from 'react-redux';
 class Hfooter extends Component {
     constructor(props) {
         super(props);
-        // console.log(props)
-        this.props = props;
-        // console.log(props);
+        // this.props = props;
+        console.log(props);
         this.state = {
             nav: 0,
             navs: [
@@ -24,22 +23,24 @@ class Hfooter extends Component {
         })
         // this.props.dispatch.push(this.state.navs[index].href)
     }
-    getlist(index,e){
-        // console.log(index);
-        
-        // for(var i=0;i<this.state.navs.length;i++){
-            console.log(this.props)
-            this.props.togglelist(true,false) 
-            // if(this===1){
-            //     console.log(6666);
-            //     this.props.toggleList.bind(this,this.props.showlist);
-                
-            // }
-        // }
-        console.log(this)
-        
-        // console.log(this.props.showlist)
+    componentDidMount(){
+       
     }
+    // getlist(index, e) {
+    //     console.log(index);
+    //     console.log(e);
+    //     console.log(this.props)
+    //     this.props.togglelist.bind(e)
+    //     // if(this===1){
+    //     //     console.log(6666);
+    //     //     this.props.toggleList.bind(this,this.props.showlist);
+
+    //     // }
+    //     // }
+    //     console.log(this.props.showlist)
+
+    //     // console.log(this.props.showlist)
+    // }
     render() {
         return (
             <div className="footerNav">
@@ -47,16 +48,13 @@ class Hfooter extends Component {
                     {
                         (() => {
                             return this.state.navs.map((item, index) => {
-                                return (
-                                    <li key={index} className="cur" onClick={this.getlist.bind(this,index)}
+                                return (<li className="cur" key={index} onClick={ this.props.togglelist.bind(this,this.props.showlist)}>
+                                    <Link to={{ pathname: `${item.href}` }} replace key={index}
                                     >
-                                        <Link to={{ pathname: `${item.href}` }} replace key={index}
-                                           >
-                                            <img src={item.imgsrc} cursrc={item.imgsrc} alt='' />
-                                            <span className='f-title'>{item.title}</span>
-                                        </Link>
-                                    </li>
-
+                                        <img src={item.imgsrc} cursrc={item.imgsrc} alt='' />
+                                        <span className='f-title'></span>
+                                    </Link>
+                                </li>
                                 )
 
                             })
@@ -69,18 +67,17 @@ class Hfooter extends Component {
     }
 }
 export default connect((state) => {
-    // console.log(state)
     return state;
 }, (dispatch) => {
     return {
-        togglelist(bol,dol) {
+        togglelist() {
+            // console.log(this)
             dispatch({
-                type: 'togglelist',
+                type: 'toggleList',
                 showlist: {
-                    isShowlist: bol,
-                    isShowlists: dol
+                    isShowlist: !this.props.showlist.isShowlist,
+                    isShowlists: !this.props.showlist.isShowlists,
                 }
-
             })
         }
     }
