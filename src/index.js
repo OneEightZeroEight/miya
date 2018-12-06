@@ -40,9 +40,11 @@ const store = createStore((state = {
     showlist :{
         isShowlists: false,
         isShowlist : true,
+        // home
+        isShowsec : [],
+        aa:[]
+    }
 
-    },
-    aa:[]
     
 }, action) => {
     switch (action.type) {
