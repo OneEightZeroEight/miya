@@ -10,6 +10,10 @@ import Axios from 'axios'
 
 import cookie from 'react-cookies'
 
+import qs from 'qs'
+
+import { connect } from 'react-redux';
+
 class User extends Component{
     constructor(props){
         super(props);
@@ -28,25 +32,56 @@ class User extends Component{
       this.state.ps = e.target.value
     }
     sendCode(){
-      //console.log(Axios)
-      // Axios.get('https://open.ucpaas.com/ol/sms/sendsms')
+      // let d = new Date()
+      // d = d.getTime()
+      // let randomNum = Math.floor(Math.random()*9000+1000)
+      // Axios.get('https://open.ucpaas.com/ol/sms/sendsms',{
+      //   sid : '1053d0996c825b3c50f04e73d8cd3ab9',
+      //   token : '205a3fee04cdb6c18176',
+      //   appid : '10e938b99ffd44c38f5ca923adb718c8',
+      //   templateid : 
+      //   '406029',
+      //   mobile : '15770745648' 
+      // })
       // .then(res=>{
       //   console.log(res)
       // })
       // .catch(err=>{
       //   console.log(err)
-      // })      
+      // })
+
+      Axios.post('http://127.0.0.1:4444/api/register')
+      .then(res=>{
+        console.log(res)
+      })
+      .catch(err=>{
+        console.log(err)
+      })
     }
     entry(){
       console.log(this.state.us)
       if(/^1[345678]\d{9}/.test(this.state.us)){
-        console.log(cookie.load('us'))
-        if(!cookie.load('us',this.state.us)){
-          cookie.save('us',{name:this.state.us,level:'小蜜蜂',val:0,coupon:0})
-        }
-        this.setState({
-          status : 'user'
+        
+        // if(!cookie.load('us',this.state.us)){
+          
+        //   cookie.save('us',{name:this.state.us,level:'小蜜蜂',val:0,coupon:0})
+        // }
+        Axios.post('http://127.0.0.1:4444/api/register',qs.stringify({
+          us : this.state.us
+        }))
+        .then(res=>{
+          console.log(res)
+          this.setState({
+            status : 'user'
+          })
+          this.props.getUs(this.state.us)
         })
+      .catch(err=>{
+        console.log(err)
+      })
+      
+      }else{
+
       }      
     }
     
@@ -142,11 +177,19 @@ class User extends Component{
                 }
               })()
             }
-          </div>
-           
-           
-            
+          </div>           
         );
     }
 }
-export default User;
+export default connect(state=>{
+  return state
+},dispatch=>{
+  return {
+    getUs(us){
+      dispatch({
+        type : 'setUs',
+        us
+      })
+    }
+  }
+})(User);

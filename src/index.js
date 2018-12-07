@@ -29,6 +29,7 @@ const store = createStore((state = {
         isShowlist : true,
 
     },
+    us:''
     
 }, action) => {
     switch (action.type) {
@@ -41,8 +42,11 @@ const store = createStore((state = {
             return state;
         case 'add3':
             return state;
-        case 'add4':
-            return state;
+        case 'setUs':
+            return {
+              ...state,
+              us : action.us
+            };
         default:
             return state;
     }

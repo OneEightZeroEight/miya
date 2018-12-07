@@ -8,6 +8,8 @@ import '../.././styles/car.scss'
 
 import Axios from 'axios'
 
+import {connect} from 'react-redux'
+
 class Car extends Component{
     constructor(props){
         super(props);
@@ -109,6 +111,7 @@ class Car extends Component{
     }
 
     componentDidMount(){
+      console.log(this.props)
       let goodList = this.state.goodList
       goodList.forEach((item,idx)=>{
         this.getSubtotal(idx)
@@ -256,7 +259,7 @@ class Car extends Component{
                       <span>总计：￥{this.state.totalPrice}</span><br/>
                       <span className="explain">不含运费和进口税</span>
                     </li>
-                    <li><button> 结算({this.state.num})</button></li>
+                    <li><button>结算({this.state.num})</button></li>
                   </ul>
                 </li>
                 <Hfooter></Hfooter>
@@ -266,4 +269,10 @@ class Car extends Component{
         );
     }
 }
-export default Car;
+export default connect(state=>{
+  return state
+},dispatch=>{
+  return {
+    
+  }
+})(Car);
