@@ -30,7 +30,23 @@ class Lists extends Component {
         this.setState((prevState) => ({
             licur: index,
         }))
-        console.log(index)
+        if(this.state.licur===3){
+            // React.axios.get('../jsons/Lists.json')
+            // .then((res)=>{
+            //     // var newdata=res.result
+            //     // newdata.sort(up);
+            //     // //打印排序后的数据到控制台
+            //     // console.log(newdata);
+            //     // //注意sort()在原数据上进行排序，不生成副本
+            //     console.log(res); 
+            // })
+            // .catch((err)=>{
+            //     console.log(err)
+            // })
+            let newdetail = this.state.detail;
+            let newarr = newdetail.reverse()
+            console.log(newarr)
+        }
     }
     windowOnScroll() {
         if(this.state.loadingmore===true){
@@ -126,7 +142,7 @@ class Lists extends Component {
                         
                         
                     </ul>
-                    <div className="mask"></div>
+                    {/* <div className="mask"></div> */}
                 </nav>
                 <div className="proList" id="listItems">
                     {

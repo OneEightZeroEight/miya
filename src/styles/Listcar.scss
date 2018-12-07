@@ -1,0 +1,135 @@
+.mask {
+    background: rgba(0,0,0,.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100000;
+}
+.show{
+    display: block;
+}
+.hidden{
+    display: none;
+}
+.detail-tankuang {
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 100001;
+    font-size: .512rem;
+    .tk-title {
+        height: 3.1787rem;
+        padding-left: 4.8213rem;
+        .selProImg {
+            position: absolute;
+            width: 3.7973rem;
+            height: 3.7973rem;
+            border: 1px solid #f2f2f2;
+            overflow: hidden;
+            left: .4267rem;
+            top: -1.4933rem;
+            img {
+                width: 100%;
+            }
+        }
+        .selInfo {
+            text-align: left;
+            line-height: 1.5;
+            font-size: .512rem;
+            .selPrice {
+                display: block;
+                color: #fa4b9b;
+                font-size: .6827rem;
+            }
+            .stock {
+                display: block;
+                min-height: .7rem;
+            }
+        }
+        .closeBtn {
+            position: absolute;
+            width: 1.7067rem;
+            height: 1.7067rem;
+            right: 0;
+            top: 0;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            cursor: pointer;
+            span{
+                display: block;
+                width: .533333rem;
+                height: .533333rem;
+                position:relative;
+                top: .026667rem;
+                right: -0.666667rem;
+            }
+        }
+    }
+    .selParams {
+        max-height:6.3067rem;
+
+        dl {
+            padding: .8533rem .4267rem 1.4933rem;
+            // overflow: hidden;
+            border-bottom: .0213rem solid #f2f2f2;
+            padding-bottom: 0;
+            padding-top: .4267rem;
+            dt {
+                font-size: .4973rem;
+            }
+            dd {
+                display: inline-block;
+                height: 28px;
+                line-height: 28px;
+                border: .0213rem solid #e0e0e0;
+                border-radius: .1707rem;
+                margin-bottom: .64rem;
+                padding: 0 .533rem;
+                color: #333;
+                cursor: pointer;
+                span{
+                    font-size: 6px;
+                }
+            }
+            .active {
+                border-color: #fa4b9b;
+                color: #fa4b9b;
+            }
+            
+        }
+        .jisuan {
+                width: 1.413333rem;
+                margin-bottom: 1.333333rem;
+                
+            }
+    }
+    .fl{
+        float:left;
+    }
+    .fr{
+        float:right;
+    }
+    .tk-btnGroup {
+        background: #fa4b9b;
+        color: #fff;
+        height: 1.28rem;
+        text-align: center;
+        button {
+            color: #fff;
+            display: inline-block;
+            height: 100%;
+            text-align: center;
+            font-size: .64rem;
+            border: none;
+            background: 0 0;
+            display: block;
+            width: 100%;
+        }
+    }
+}
