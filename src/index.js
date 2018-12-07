@@ -90,6 +90,11 @@ const store = createStore((state = {
             ...state,
             listcarvalue : action.listcarvalue
         };
+        case 'byDetail':
+        return {
+            ...state,
+            
+        }
         default:
             return state;
     }

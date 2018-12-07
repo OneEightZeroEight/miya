@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "../../styles/zfbui.css";
+// import "../../styles/zfbui.css";
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Swiper from 'swiper';

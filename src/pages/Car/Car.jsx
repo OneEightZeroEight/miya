@@ -1,12 +1,12 @@
 import React , {Component} from 'react';
 // import {Route} from 'react-router-dom';
-import {connect} from 'react-redux';
+// import { connect } from 'react-redux';
 import Hfooter from '../../components/Hfooter.jsx';
 // import Hsearch from '../Home/Hsearch.jsx';
 
 import '../.././styles/car.scss'
 
-import Axios from 'axios'
+// import Axios from 'axios'
 
 
 class Car extends Component{

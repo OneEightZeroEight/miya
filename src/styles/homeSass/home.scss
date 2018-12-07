@@ -69,15 +69,15 @@
                 font-weight: bold;
     
                 span{
-                    width: 20px;
-                    height: 20px;
+                    width: .533333rem;
+                    height: .533333rem;
                     color: #888;
-                    font-size: 10px;
+                    font-size: .266667rem;
                     text-align: center;
-                    line-height: 20px;
-                    border-left: 1px solid #888;
-                    margin-left: 5px;
-                    padding-left: 5px;
+                    line-height: .533333rem;
+                    border-left: .026667rem solid #888;
+                    margin-left: .133333rem;
+                    padding-left: .133333rem;
                 }
             }
             .secSome{
@@ -184,7 +184,7 @@
 }
 
 #secPage{
-    bottom: -3px;
+    bottom: -0.08rem;
 }
 
 .cur{
@@ -209,23 +209,23 @@
 /*-----------------------baby年龄推荐--------------*/
 
 .z_bady{
-    height: 200px;
+    height: 5.333333rem;
     background: #fff;
     .HeaBaby{
         background: #FBFBFB;
         h3{
-            padding: 0 10px;
-            height: 40px;
-            line-height: 40px;
-            font-size: 16px;
+            padding: 0 .266667rem;
+            height: 1.066667rem;
+            line-height: 1.066667rem;
+            font-size: .426667rem;
             font-weight: normal;
-            padding-left: 10px;
+            padding-left: .266667rem;
             display: inline;
           
         }
         i{
             color: greenyellow;
-            padding-left: 10px;
+            padding-left: .266667rem;
         }
     }
     .BabyUnlike{
@@ -267,16 +267,16 @@
         
             .heaLt{
                 font-size: .48rem;      
-                margin-left: 5px;
+                margin-left: .133333rem;
                 color: #FF4A4A;
                 i{
-                    margin: 0 5px 0 5px;
-                    font-size: 16px;   
+                    margin: 0 .133333rem 0 .133333rem;
+                    font-size: .426667rem;   
                 }
                 .bao{
-                    margin-left: 5px;
+                    margin-left: .133333rem;
                     display: inline-block;
-                    font-size: 12px; 
+                    
                     width: 1.6rem;
                     height: .533333rem;
                     background: #FF4A4A;
@@ -286,6 +286,7 @@
                     border-radius: .133333rem;
                     b{
                         font-weight: normal;
+                        font-size: .293333rem; 
                     }
                 }
             
@@ -309,7 +310,7 @@
         }
     }
     p{
-        padding-top: 2px;
+        padding-top: .053333rem;
         margin: 0;
     }
     .secTitle{
@@ -325,7 +326,7 @@
         color: #ff4a4a;
         b{
             margin-left: .0667rem;
-            font-size: 10px;
+            font-size: .266667rem;
             font-weight: 700;
             font-style: normal;
         }
@@ -400,14 +401,14 @@
         }
 
         .mt10{
-            margin-top: 10px;
+            margin-top: .266667rem;
             background-color: #fff;
             overflow: hidden;
 
             .koubei_title {
                 text-align: center;
-                font-size: 12px;
-                padding: 15px 0 10px 0;
+                font-size: .32rem;
+                padding: .4rem 0 .266667rem 0;
                 .aa{
                     background: 0 0;
                     text-decoration: none;
@@ -416,14 +417,14 @@
                 }
                 p {
                     color: #333333;
-                    font-size: 18px;
+                    font-size: .48rem;
                 }
             }
             .small {
                 position: relative;
                 padding: .26667rem 0;
                 display: inline-block;
-                margin-left: 11px;
+                margin-left: .293333rem;
 
                 .smallwrap {
                     overflow-x: hidden;
@@ -454,10 +455,10 @@
                                 left: 0;
                                 background: #ff1a3e;
                                 color: #ffffff;
-                                font-size: 11px;
-                                padding: 1px 2px;
-                                border-radius: 0 4px 4px 0;
-                                -webkit-border-radius: 0 4px 4px 0;
+                                font-size: .293333rem;
+                                padding: .026667rem .053333rem;
+                                border-radius: 0 .106667rem .106667rem 0;
+                                -webkit-border-radius: 0 .106667rem .106667rem 0;
                             }
                             .free_shippingMark {
                                 width: auto;
@@ -469,32 +470,32 @@
 
                                 display: inline-block;
                                 background: rgba(255,255,255,0.8);
-                                height: 17px;
-                                line-height: 17px;
-                                width: 30px;
+                                height: .453333rem;
+                                line-height: .453333rem;
+                                width: .8rem;
                                 color: #f72283;
-                                border: 1px solid #f72283;
-                                border-radius: 8px;
-                                -webkit-border-radius: 8px;
+                                border: .026667rem solid #f72283;
+                                border-radius: .213333rem;
+                                -webkit-border-radius: .213333rem;
                                 position: absolute;
-                                bottom: 5px;
+                                bottom: .133333rem;
                                 left: 50%;
-                                margin-left: -15px;
-                                font-size: 11px;
+                                margin-left: -0.4rem;
+                                font-size: .293333rem;
                             }
                         }
                         .tit{
                             display: block;
                             
                             overflow: hidden;
-                            height: 30px;
-                            margin-top: 7px;
+                            height: .8rem;
+                            margin-top: .186667rem;
                             line-height: 1.3;
                             color: #333;
-                            font-size: 12px;
+                            font-size: .32rem;
                         }
                         .price {
-                            font-size: 14px;
+                            font-size: .373333rem;
                             color: #fa4b9b;
                         }
                     }
@@ -509,7 +510,7 @@
 .jia_some{
     text-align: center;
     line-height: .8rem;
-    margin-top: 10px;
+    margin-top: .266667rem;
     span{
         display: block;
         width: 9.866667rem;
@@ -530,24 +531,24 @@
     line-height: 2.5rem;
     text-align: center;
     color: #cecece;
-    margin-bottom: 65px;
+    margin-bottom: 1.733333rem;
     a{
-        margin: 0 6px;
+        margin: 0 .16rem;
         text-decoration: none !important;
         color: #999999;
-        font-size: 13px;
+        font-size: .346667rem;
     }
     p{
         line-height: 2;
         padding: 0 0.4rem;
-        font-size: 11px;
+        font-size: .293333rem;
     }
     .line{
 
     }
     .download-footer{
         position: relative;
-        margin-top: 20px;
+        margin-top: .533333rem;
         line-height: 1;
         img{
             width: 100%;
@@ -555,7 +556,7 @@
         }
         a{
             position: absolute;
-            width: 94px;
+            width: 2.506667rem;
             height: 100%;
             top: 0;
             right: 0;
