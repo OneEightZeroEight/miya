@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+// import { inflate } from 'zlib';
 class Hfooter extends Component {
     constructor(props) {
         super(props);
-        // this.props = props;
-        console.log(props);
+        this.props = props;
+        // console.log(props);
         this.state = {
             nav: 0,
             navs: [
@@ -23,8 +24,51 @@ class Hfooter extends Component {
         })
         // this.props.dispatch.push(this.state.navs[index].href)
     }
-    componentDidMount(){
-       
+    componentDidUpdate(){
+        // this.toggleimg()
+    }
+    componentWillReceiveProps(){
+        
+    }
+    toggleimg(index,e){
+        console.log(index,this.state.nav);
+        // this.setState((prevState) => ({
+        //     nav: index,
+        // }))
+        // if (this.state.info !== nextState.info){
+        //     return true;
+        // }
+        let imgarr = this.state.navs;
+        if(index===0){
+            imgarr[index].imgsrc = 'https://img.miyabaobei.com/d1/p5/2016/09/18/2d/6e/2d6e980b0b5349275e0b8295f824ef9e812602271.png';
+            this.setState = {
+                navs :imgarr
+            }
+            this.forceUpdate();
+        // console.log(this.state.navs)
+        }else if(index===1){
+            imgarr[index].imgsrc = 'https://img.miyabaobei.com/d1/p5/2016/09/18/0e/09/0e09208be94bb47f600d15be785cf830816904666.png';
+            this.setState = {
+                navs :imgarr
+            }
+            this.forceUpdate();
+        }else if(index===2){
+            imgarr[index].imgsrc = 'https://img.miyabaobei.com/d1/p4/2016/09/18/14/a8/14a8f7658ffad480f02279fcd4060bf1817033664.png';
+            this.setState = {
+                navs :imgarr
+            }
+            this.forceUpdate();
+        }else if(index===3){
+            imgarr[index].imgsrc = 'https://img.miyabaobei.com/d1/p4/2016/09/18/dc/41/dc4129f7790242bb9e9d734e438499e2817181623.png';
+            this.setState = {
+                navs :imgarr
+            }
+            this.forceUpdate();
+        }
+        console.log(this.state.navs)
+        // console.log(this.state.nav)
+        // console.log(e);
+        // console.log(this.props)
     }
     // getlist(index, e) {
     //     console.log(index);
@@ -51,7 +95,7 @@ class Hfooter extends Component {
                                 return (<li className="cur" key={index} onClick={ this.props.togglelist.bind(this,this.props.showlist)}>
                                     <Link to={{ pathname: `${item.href}` }} replace key={index}
                                     >
-                                        <img src={item.imgsrc} cursrc={item.imgsrc} alt='' />
+                                        <img src={item.imgsrc} cursrc={item.imgsrc} alt='' onClick={this.toggleimg.bind(this,index)}/>
                                         <span className='f-title'></span>
                                     </Link>
                                 </li>

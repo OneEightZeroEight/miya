@@ -155,7 +155,7 @@ class Lists extends Component {
                                 >
                                     <a href="/list/listdetail" title="miya" alt='' >
                                         <div className="entranceMap">
-                                            <img src={item.m_search_pic}
+                                            <img src={item.image}
                                                 alt="" />
                                         </div>
                                         <div className="rim">

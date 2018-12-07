@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "../../styles/homeSass/home.scss";
 import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 import Swiper from 'swiper';
 
 class Zseckill extends Component {
@@ -47,7 +47,7 @@ class Zseckill extends Component {
         .then((res) => {
             // console.log(res.data.item_list);
           let btnIn =res.data.item_list;
-            console.log(index);
+            // console.log(index);
            this.setState({
                 btnIn:btnIn
            })
@@ -94,7 +94,7 @@ class Zseckill extends Component {
 
 
     render() {
-        console.log(this.state)
+        // console.log(this.state)
         return (
             <div>
             <div className="z_secSome">
