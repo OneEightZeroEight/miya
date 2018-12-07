@@ -28,10 +28,10 @@ class Hfooter extends Component {
         // this.toggleimg()
     }
     componentWillReceiveProps(){
-        
+
     }
     toggleimg(index,e){
-        console.log(index,this.state.nav);
+        // console.log(index,this.state.nav);
         // this.setState((prevState) => ({
         //     nav: index,
         // }))
@@ -65,7 +65,7 @@ class Hfooter extends Component {
             }
             this.forceUpdate();
         }
-        console.log(this.state.navs)
+        // console.log(this.state.navs)
         // console.log(this.state.nav)
         // console.log(e);
         // console.log(this.props)

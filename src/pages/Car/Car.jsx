@@ -8,7 +8,6 @@ import '../.././styles/car.scss'
 
 import Axios from 'axios'
 
-import {connect} from 'react-redux'
 
 class Car extends Component{
     constructor(props){
