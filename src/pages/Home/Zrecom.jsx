@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import "../../styles/homeSass/home.scss";
+import { connect } from "react-redux";
+import { Link } from "react-router-dom"
 class Zrecom extends Component {
     constructor(props) {
         super(props);
@@ -11,13 +13,19 @@ class Zrecom extends Component {
                 // dataId:''
                 dataNums:1,
                 arr2:[],
-                isShow:true
+                isShow:true,
+                bb:[]
                
         }
     }
     componentDidMount() {
         
         this.getRecom();
+
+    }
+    componentDidUpdate (){
+        console.log(this.state)
+
     }
 
     jiaSome(dataNums){
@@ -58,7 +66,8 @@ class Zrecom extends Component {
             .then((res) => {
                 // console.log(res);
                 // console.log(res.data[0].data1.res.rank);  
-                let dataNums = this.state.dataNums+1;            
+                let dataNums = this.state.dataNums+1;    
+
                 this.setState({
                   data1:res.data[0].data1.res.rank,
                   data2:res.data[0].data2.res.rank,
@@ -71,15 +80,16 @@ class Zrecom extends Component {
             })
     }
     //商品跳到详情页
-    byGoods(id){
-        console.log(id);
-        let storage = window.localStorage;  //获取storage对象
-        storage.setItem('recomId',id)
-        // console.log(storage.setItem('recomId',id))
+    
+    // byGoods(items){
+    //     console.log(items);
+    //     this.setState({
+    //         bb:items
+    //     })
+       
 
-    }
+    // }
     render() {
-        // console.log(this.state)
         return (
            <div className="z_recom">
                 <div className="recomGood">
@@ -105,7 +115,8 @@ class Zrecom extends Component {
                                        (()=>{
                                            return item.rank_item_list.map((items,indexs)=>{
                                                return (
-                                                    <div className="small koubei_box" key={indexs} onClick={this.byGoods.bind(this,items.id)}>
+                                                   
+                                                    <Link to = "/detail" className="small koubei_box" key={indexs} onClick={this.props.getdetails.bind(this,items)}>
                                                         <div className="smallwrap">
                                                             <div className="item aa">
                                                                 <div className="img">
@@ -118,7 +129,7 @@ class Zrecom extends Component {
                                                                 <p className="price">{items.feedback_rate}%<span>好评</span></p>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                    </Link>
                                                )
                                            }) 
                                        })()   
@@ -145,14 +156,18 @@ class Zrecom extends Component {
         )
     }
 }
-export default Zrecom;
+export default connect((state)=>{
+    console.log(state);
+    return state;
+},(dispatch)=>{
+    return {
+        getdetails(items){
+            dispatch({
+                type:'getdetails',
+                aa:items
+            })
+        }
+    }
+})(Zrecom);
 
 
-// window.onscroll = () => {
-//     var allHeight = document.body.scrollHeight;//body高度
-//     var seeHeight = window.screen.height;//可视区域高度
-//     var notSeeHeight = document.documentElement.scrollTop;//滚动条卷上去的高度
-//     if (!notSeeHeight) {
-//         notSeeHeight = document.body.scrollTop;
-//     }
-//     if (seeHeight + notSeeHeight == allHeight) {}
