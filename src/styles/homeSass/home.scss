@@ -133,11 +133,11 @@
                     }
       
                 }
-                li:nth-of-type(7){
-                    span{
-                        color: #ea3983 !important;
-                    }
-                }
+                // li:nth-of-type(7){
+                //     span{
+                //         color: #ea3983 !important;
+                //     }
+                // }
         
             }
         }
@@ -186,6 +186,25 @@
 #secPage{
     bottom: -3px;
 }
+
+.cur{
+    color:#fff;
+    
+    .sec1{
+        background: #ea3983;
+        border-radius: .373333rem;
+    }
+    .sec2{
+        color:  #ea3983 !important;
+    }
+}
+
+
+
+
+
+
+
 
 /*-----------------------baby年龄推荐--------------*/
 

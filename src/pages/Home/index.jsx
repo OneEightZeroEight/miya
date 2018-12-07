@@ -21,13 +21,6 @@ import Zrecom from '../Home/Zrecom.jsx';
 import Zfooter from '../Home/Zfooter';
 
 
-
-
-
-
-
-
-
 class Index extends Component{
     constructor(props){
 
@@ -43,6 +36,8 @@ class Index extends Component{
             history:this.props.history
         })
     }
+    //存数据
+    
 
     render(){
         return (
