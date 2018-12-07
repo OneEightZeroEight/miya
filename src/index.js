@@ -42,8 +42,12 @@ const store = createStore((state = {
         isShowlist : true,
         // home
         isShowsec : [],
-        aa:[]
-    }
+        
+    },
+    aa:[],
+    listcar:false,
+    listcarvalue:1,
+    carnumber:0,
 
     
 }, action) => {
@@ -58,10 +62,21 @@ const store = createStore((state = {
                 ...state,
                 aa : action.aa
             };
-        case 'toggleLoding':
-            return state;
-        case 'add3':
-            return state;
+        case 'togglelistcar':
+            return {
+                ...state,
+                listcar : action.listcar
+            };
+        case 'add':
+        return {
+            ...state,
+            listcarvalue : action.listcarvalue
+        };
+        case 'jian':
+        return {
+            ...state,
+            listcarvalue : action.listcarvalue
+        };
         default:
             return state;
     }

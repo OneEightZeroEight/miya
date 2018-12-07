@@ -8,18 +8,18 @@ import BannerAnim, { Element } from 'rc-banner-anim';
 import TweenOne from 'rc-tween-one';
 import 'rc-banner-anim/assets/index.css';
 // const BgElement = Element.BgElement;
-
+import Listcar from './Listcar.jsx'
 import { BackTop } from 'antd'; //引入 ant 
 
 class Detail extends Component {
     constructor(props) {
         super(props);
         this.props = props;
-        // console.log(props);
+        console.log(props);
         this.state = {
             contentClass: "titleBar",
             cur: 0,
-            showbox:'showblock1',
+            showbox:'block',
             title: [
                 { name: "商品详情", idx:0},
                 { name: "产品参数", idx:1},
@@ -52,11 +52,10 @@ class Detail extends Component {
         this.setState((prevState) => ({
             cur: index,
         }))
-
     }
     render() {
-        console.log(this.state);
-        console.log(this.props);
+        // console.log(this.state);
+        // console.log(this.props);
         return (
             <div>
                 {/* 头部 */}
@@ -142,9 +141,9 @@ class Detail extends Component {
                 <div className="mb16">
                     <div className="detail-item haslable">
                         <span className="label">选择</span>
-                        <span className="pl5">米色</span>
+                        <span className="pl5">{this.props.aa.code_color}</span>
                         <span className="pl5" id="size_selected"> , 100cm</span>
-                        <span className="moreBtn2" data-pop="selectBoxPop">●●●</span>
+                        <span className="moreBtn2" onClick={this.props.togglelistcar.bind(this)} data-pop="selectBoxPop">●●●</span>
                     </div>
                 </div>
                 {/* 商品信息 style={{position: "relative",top: "110px"}}*/}
@@ -166,7 +165,7 @@ class Detail extends Component {
                 {/* 图片盒子 */}
                 <section className="proBox">
                     <div className="slideBox">
-                        <div className={this.state.showbox} style={{ minHeight: "535px" }}>
+                        <div className={this.state.cur===0?"showblock1 show":"showblock1 hidden"} style={{ minHeight: "535px" }}>
                             <section className="w2 parameters">
                                 <div className="xq">
                                     <img src={this.props.aa.m_search_pic} alt="1" />
@@ -191,7 +190,7 @@ class Detail extends Component {
                             </section>
                         </div>
                         {/* 这个现在没用 */}
-                        <div className={this.state.showbox} style={{ minHeight: "535px", display: "none" }}>
+                        <div className={this.state.cur===1?"show":"showblock2 hidden"} style={{ minHeight: "535px" , display:'none'}}>
                             <section className="w201506">
                                 <div className="w201506b parameters mt10">
                                     <p>
@@ -211,7 +210,7 @@ class Detail extends Component {
                             </section>
                         </div>
 
-                        <div className={this.state.showbox} style={{ minHeight: "535px", display: "none" }}>
+                        <div className={this.state.cur===2?"show":"showblock3 hidden"} style={{ minHeight: "535px" , display:'none'}}>
                             <div className="QA">
                                 <dl>
                                     <dt className="Q">1、我如何购买？</dt>
@@ -336,7 +335,7 @@ class Detail extends Component {
                 </footer>
 
 
-
+                <Listcar></Listcar>
                 {/* 底部购物车 */}
                 <div className="detail-fixedCart fixed_cart_options">
                     <div className="cartRight">
@@ -344,13 +343,13 @@ class Detail extends Component {
                             <span className="h_store">店铺</span>
                         </a>
 
-                        <a href="/cart">
+                        <Link to="/car/" replace onClick={this.props.getdetails.bind(this)}>
                             <span className="h_cart">购物车</span>
-                            <em className="zb" id="cartNum">24</em>
-                        </a>
+                            <em className="zb" id="cartNum">{this.props.carnumber}</em>
+                        </Link>
                     </div>
 
-                    <div className="btnGroup">
+                    <div className="btnGroup" onClick={this.props.togglelistcar.bind(this)}>
                         <button href="javascritp:;" className="w50 firstBtn js_buy" >
                             <p>￥{this.props.aa.market_price}</p><p>单独购买</p>
                         </button>
@@ -377,7 +376,14 @@ export default connect((state) => {
         getdetails() {
             dispatch({
                 type: 'getdetails',
-                aa: []
+                aa: this.props.aa,
+                listcar : !this.props.listcar
+            })
+        },
+        togglelistcar() {
+            dispatch({
+                type: 'togglelistcar',
+                listcar : !this.props.listcar
             })
         }
     }
