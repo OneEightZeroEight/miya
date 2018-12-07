@@ -29,14 +29,14 @@ class Zrecom extends Component {
                 // console.log(res.data[0].data2.res.rank); 
                 // console.log(this.state);
                 let arr22 = this.state.data1;
-                if(this.state.dataNums==2){
+                if(this.state.dataNums===2){
 
                     var arr2 = res.data[0].data1.res.rank.concat(res.data[0].data2.res.rank);
                 }
 
-                if(this.state.dataNums==3){
-                     var arr2 =arr22.concat(res.data[0].data3.res.rank);
-                    this.state.isShow=false
+                if(this.state.dataNums===3){
+                     arr2 =arr22.concat(res.data[0].data3.res.rank);
+                    this.state.isShow = false
                 }
                 // console.log(arr2);
                 this.state.dataNums = 3;
@@ -70,6 +70,14 @@ class Zrecom extends Component {
                 console.log(err);
             })
     }
+    //商品跳到详情页
+    byGoods(id){
+        console.log(id);
+        let storage = window.localStorage;  //获取storage对象
+        storage.setItem('recomId',id)
+        // console.log(storage.setItem('recomId',id))
+
+    }
     render() {
         // console.log(this.state)
         return (
@@ -97,7 +105,7 @@ class Zrecom extends Component {
                                        (()=>{
                                            return item.rank_item_list.map((items,indexs)=>{
                                                return (
-                                                    <div className="small koubei_box" key={indexs} >
+                                                    <div className="small koubei_box" key={indexs} onClick={this.byGoods.bind(this,items.id)}>
                                                         <div className="smallwrap">
                                                             <div className="item aa">
                                                                 <div className="img">

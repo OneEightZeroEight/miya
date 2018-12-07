@@ -31,7 +31,8 @@ class Zgroup extends Component {
 
     componentDidMount() {
       this.getZgoods();
-      var myswiper = new Swiper('.seiperGrouup', {
+      
+        new Swiper('.seiperGrouup', {
         observer: true,
         slidesPerView: 4,
         slidesPerColumn: 2,

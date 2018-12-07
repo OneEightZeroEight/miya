@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "../../styles/homeSass/home.scss";
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
+// import { Link } from 'react-router-dom';
+// import { connect } from 'react-redux';
 import Swiper from 'swiper';
 
 class Zseckill extends Component {
@@ -12,7 +12,8 @@ class Zseckill extends Component {
             dateTime:[],
             pids:[],
             btnIn:[],
-            Zgoods:[]
+            Zgoods:[],
+            curBtn:''
             
 
         }
@@ -40,23 +41,30 @@ class Zseckill extends Component {
             })
           
     }
-    //点击触发
+    //点击触发，只有6条json
     btnData(index){
+        this.state.curBtn = index;
+        if(index<=10 && index>=6){           
+               index = index-5;
+        }else if(index>=11){
+            index = index-10;
+        }
+            React.axios.get(`./jsons/home/${index}.json`)
+            .then((res) => {
+                // console.log(res.data.item_list);
+              let btnIn =res.data.item_list;
+                console.log(index);
+               this.setState({
+                    btnIn:btnIn
+               })
+    
+    
+            })
+            .catch((err) => {
+                console.log(err);
+            })
         
-        React.axios.get(`./jsons/home/${index}.json`)
-        .then((res) => {
-            // console.log(res.data.item_list);
-          let btnIn =res.data.item_list;
-            console.log(index);
-           this.setState({
-                btnIn:btnIn
-           })
-
-
-        })
-        .catch((err) => {
-            console.log(err);
-        })
+       
 
     }
     //商品请求
@@ -78,7 +86,9 @@ class Zseckill extends Component {
         this.getTimes();
         this.getZgoods();
         this.btnData(1);
-        var myswiper = new Swiper('.seiperGoods', {
+        this.state.curBtn = 3;
+
+        new Swiper('.seiperGoods', {
           observer: true,
           slidesPerView: 4,
           slidesPerColumn: 2,
@@ -91,6 +101,7 @@ class Zseckill extends Component {
       
 
     }
+    
 
 
     render() {
@@ -115,7 +126,7 @@ class Zseckill extends Component {
                                (()=>{
                                    return this.state.dateTime.map((item,index) => {
                                        return (
-                                       <li key={index} onClick={this.btnData.bind(this,index)} className="">
+                                       <li key={index} onClick={this.btnData.bind(this,index)} className={this.state.curBtn===index?"cur":""}>
                                            <span className="sec1">{item.tab_time}</span>
                                            <span className="sec2">{item.seckill_type}</span>
 
@@ -137,7 +148,7 @@ class Zseckill extends Component {
                          (()=>{
                              return this.state.btnIn.map((item,index)=>{
                                  return (
-                                     <div className="swiper-slide Secslide"  key={index}>
+                                     <div className="swiper-slide Secslide"  key={index} >
                                          <div className="secPic">
                                              <img src={item.pic} alt="Zrecom" className="secImg"/>
                                          </div>
