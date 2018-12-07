@@ -1,6 +1,6 @@
 import React , {Component} from 'react';
 // import {Route} from 'react-router-dom';
-
+import {connect} from 'react-redux';
 import Hfooter from '../../components/Hfooter.jsx';
 // import Hsearch from '../Home/Hsearch.jsx';
 
@@ -12,6 +12,7 @@ class Car extends Component{
     constructor(props){
         super(props);
         this.props = props;
+        console.log(props)
         this.state = {
           goodList : [
             {
@@ -266,4 +267,15 @@ class Car extends Component{
         );
     }
 }
-export default Car;
+export default connect((state)=>{
+  return state
+},(dispatch)=>{
+  return {
+    getdetails() {
+      dispatch({
+          type: 'getdetails',
+          aa: [],
+      })
+  }
+  }
+})(Car);

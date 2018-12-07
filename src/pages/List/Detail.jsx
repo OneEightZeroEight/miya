@@ -15,7 +15,7 @@ class Detail extends Component {
     constructor(props) {
         super(props);
         this.props = props;
-        // console.log(props);
+        console.log(props);
         this.state = {
             contentClass: "titleBar",
             cur: 0,
@@ -343,10 +343,10 @@ class Detail extends Component {
                             <span className="h_store">店铺</span>
                         </a>
 
-                        <a href="/cart">
+                        <Link to="/car/" replace onClick={this.props.getdetails.bind(this)}>
                             <span className="h_cart">购物车</span>
-                            <em className="zb" id="cartNum">24</em>
-                        </a>
+                            <em className="zb" id="cartNum">{this.props.carnumber}</em>
+                        </Link>
                     </div>
 
                     <div className="btnGroup" onClick={this.props.togglelistcar.bind(this)}>
@@ -376,7 +376,7 @@ export default connect((state) => {
         getdetails() {
             dispatch({
                 type: 'getdetails',
-                aa: [],
+                aa: this.props.aa,
                 listcar : !this.props.listcar
             })
         },

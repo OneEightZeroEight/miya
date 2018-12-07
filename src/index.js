@@ -47,6 +47,7 @@ const store = createStore((state = {
     aa:[],
     listcar:false,
     listcarvalue:1,
+    carnumber:0,
 
     
 }, action) => {
