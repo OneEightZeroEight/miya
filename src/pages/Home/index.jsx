@@ -9,8 +9,20 @@ import Hfooter from '../../components/Hfooter.jsx';
 import Hsearch from '../Home/Hsearch.jsx';
 import Zbanner from '../Home/Zbanner.jsx';
 import Zseckill from '../Home/Zseckill.jsx'
-import ZsecGoods from '../Home/ZsecGoods.jsx';
-// import GridExample from '../Home/ZsecGoods.jsx'
+// import ZsecGoods from '../Home/ZsecGoods.jsx';
+import Zbady from '../Home/Zbaby.jsx';
+import Zgroup from '../Home/Zgroup.jsx';
+import Zrecom from '../Home/Zrecom.jsx';
+// import Demo from '../Home/Zremonss';
+
+
+
+
+import Zfooter from '../Home/Zfooter';
+
+
+
+
 
 
 
@@ -39,8 +51,14 @@ class Index extends Component{
                 <Hsearch></Hsearch>
                 <Zbanner></Zbanner>
                 <Zseckill></Zseckill>
-                <ZsecGoods></ZsecGoods>
-                
+                {/* <ZsecGoods></ZsecGoods> */}
+                <Zbady></Zbady>
+                <Zgroup></Zgroup>
+                <Zrecom></Zrecom>
+                {/* <Demo></Demo> */}
+
+
+                <Zfooter></Zfooter>
                 <Hfooter ss={this.state.history}></Hfooter>
             </div>
         );

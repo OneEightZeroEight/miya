@@ -7,10 +7,11 @@ class Zbanner extends Component {
         this.props = props;
         
     }
-    bannerData(){
-        new Swiper('.swiper-container', {
+    componentDidMount(){
+        // this.bannerData();
+        var swiperBanner = new Swiper('.swiperLun', {
             loop: true,
-            // observer: true,
+            observer: true,
             autoplay:{
                 delay:2000,
                 disableOnInteraction:false
@@ -19,9 +20,6 @@ class Zbanner extends Component {
               el: '.swiper-pagination',
             },
         });
-    }
-    componentDidMount(){
-        this.bannerData();
     }
     render() {
         return (

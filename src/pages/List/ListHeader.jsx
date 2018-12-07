@@ -5,7 +5,7 @@ class ListHeader extends Component {
     constructor(props) {
         super(props);
         this.props = props;
-        console.log(props);
+        // console.log(props);
         this.state = {
 
         }

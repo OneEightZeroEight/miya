@@ -1,6 +1,6 @@
 import React , {Component} from 'react';
 // import {Route} from 'react-router-dom';
-
+import {connect} from 'react-redux';
 import Hfooter from '../../components/Hfooter.jsx';
 // import Hsearch from '../Home/Hsearch.jsx';
 
@@ -14,6 +14,7 @@ class Car extends Component{
     constructor(props){
         super(props);
         this.props = props;
+        console.log(props)
         this.state = {
           goodList : [
             {
@@ -75,7 +76,7 @@ class Car extends Component{
 
     selectAll(){
       let goodList = this.state.goodList
-      if(this.state.allSelect == false){      
+      if(this.state.allSelect === false){      
         goodList.forEach((item,idx)=>{
           item.select = true
         })
@@ -131,7 +132,7 @@ class Car extends Component{
         this.getNum()
         goodList.forEach((item,idx)=>{
           console.log(item.select)
-          if(item.select == false){
+          if(item.select === false){
             this.setState({
               allSelect : false
             })
@@ -244,7 +245,7 @@ class Car extends Component{
                     
                   </li>
                   <li className="del">
-                    <i class="fa fa-trash" aria-hidden="true"></i><span onClick={this.remove.bind(this)}>删除选择商品</span>
+                    <i className="fa fa-trash" aria-hidden="true"></i><span onClick={this.remove.bind(this)}>删除选择商品</span>
                   </li>
 
                   
@@ -269,10 +270,16 @@ class Car extends Component{
         );
     }
 }
-export default connect(state=>{
+
+export default connect((state)=>{
   return state
-},dispatch=>{
+},(dispatch)=>{
   return {
-    
+    getdetails() {
+      dispatch({
+          type: 'getdetails',
+          aa: [],
+      })
+    }
   }
 })(Car);

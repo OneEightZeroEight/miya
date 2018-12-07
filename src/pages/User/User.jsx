@@ -6,7 +6,7 @@ import Hfooter from '../../components/Hfooter.jsx';
 
 import '../.././styles/my.scss'
 
-import Axios from 'axios'
+// import Axios from 'axios'
 
 import cookie from 'react-cookies'
 
@@ -119,23 +119,23 @@ class User extends Component{
                 if(this.state.status === 'user'){
                   return <div className="user">
                   <header>
-                      <i class="fa fa-angle-left" aria-hidden="true" onClick={this.goBack.bind(this)}></i>
+                      <i className="fa fa-angle-left" aria-hidden="true" onClick={this.goBack.bind(this)}></i>
                       <span>个人中心</span>
-                      <i class="fa fa-home" aria-hidden="true" onClick={this.backHome.bind(this)}></i>
+                      <i className="fa fa-home" aria-hidden="true" onClick={this.backHome.bind(this)}></i>
                   </header>
                   <div className="res">
-                  <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                  <i className="fa fa-user-circle-o" aria-hidden="true"></i>
                     <div>
                       <span className="name">{this.state.msg.name}</span><br/>
                       <span className="level">等级：{this.state.msg.level}</span><br/><span className="val">蜜粉值：</span><br/>
                     </div>
                   </div>
                   <div className="icon">
-                    <div><i class="fa fa-bars" aria-hidden="true"></i><br/>全部订单</div>
-                    <div><i class="fa fa-archive" aria-hidden="true"></i><br/>待付款</div>
-                    <div><i class="fa fa-car" aria-hidden="true"></i><br/>待发货</div>
-                    <div><i class="fa fa-gift" aria-hidden="true"></i><br/>待收货</div>
-                    <div><i class="fa fa-book" aria-hidden="true"></i><br/>待评价</div>
+                    <div><i className="fa fa-bars" aria-hidden="true"></i><br/>全部订单</div>
+                    <div><i className="fa fa-archive" aria-hidden="true"></i><br/>待付款</div>
+                    <div><i className="fa fa-car" aria-hidden="true"></i><br/>待发货</div>
+                    <div><i className="fa fa-gift" aria-hidden="true"></i><br/>待收货</div>
+                    <div><i className="fa fa-book" aria-hidden="true"></i><br/>待评价</div>
                   </div>
                   <ul className="coupon">
                     <li><p className="left"><i class="fa fa-credit-card" aria-hidden="true"></i><span>优惠券</span></p><p className="right"><span>0张未使用</span><i class="fa fa-angle-right" aria-hidden="true"></i></p></li>
@@ -170,8 +170,8 @@ class User extends Component{
                       <div className="bar"></div>
                     </div>
                     <div className="icon">
-                    <i class="fa fa-weixin" aria-hidden="true"></i>
-                    <i class="fa fa-weibo" aria-hidden="true"></i>
+                    <i className="fa fa-weixin" aria-hidden="true"></i>
+                    <i className="fa fa-weibo" aria-hidden="true"></i>
                     </div>
                   </div>
                 }

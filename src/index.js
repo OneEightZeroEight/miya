@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import ReactDOM from 'react-dom';
+import {Toast} from 'antd-mobile'
 
 //路由
 import { HashRouter as Router } from 'react-router-dom';
@@ -9,6 +10,8 @@ import { createStore } from 'redux';
 //把上面配置好的store 和 react 进行关联
 import { Provider } from 'react-redux';
 // import './styles/App.css';
+import 'antd/dist/antd.css';// 引入 ant-design 样式 
+
 import './styles/index.css';
 import './styles/base.css';
 import './styles/List.css';
@@ -21,15 +24,35 @@ React.axios = axios;
 
 // state交换数据的仓库
 // action交换数据的动作
+axios.interceptors.request.use((config) => {
+  Toast.loading('', 3,true);
+    return config;
+  }, (err) => {
+    return Promise.reject(err)
 
+})
+axios.interceptors.response.use((response) => {
+Toast.hide(); //关闭loading
+return response;
+  }, (err) => {
+return Promise.reject(err);
+
+})
 const store = createStore((state = {
-    title: 'haha',
+    title: 'miya',
     showlist :{
         isShowlists: false,
+        
         isShowlist : true,
+        // home
+        isShowsec : [],
 
     },
-    us:''
+    us:'',
+    aa:[],
+    listcar:false,
+    listcarvalue:1,
+    carnumber:0,
     
 }, action) => {
     switch (action.type) {
@@ -37,6 +60,11 @@ const store = createStore((state = {
             return {
                 ...state,
                 showlist : action.showlist
+            };
+            case 'getdetails':
+            return {
+                ...state,
+                aa : action.aa
             };
         case 'add2':
             return state;
@@ -47,6 +75,21 @@ const store = createStore((state = {
               ...state,
               us : action.us
             };
+            case 'togglelistcar':
+            return {
+                ...state,
+                listcar : action.listcar
+            };
+        case 'add':
+        return {
+            ...state,
+            listcarvalue : action.listcarvalue
+        };
+        case 'jian':
+        return {
+            ...state,
+            listcarvalue : action.listcarvalue
+        };
         default:
             return state;
     }
