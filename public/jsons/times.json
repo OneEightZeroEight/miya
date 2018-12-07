@@ -41,7 +41,7 @@
         "label_id": "1",
         "image_index": "",
         "seckill_text": "更多秒杀",
-        "seckill_type":"抢购中",
+        "seckill_type":"正在秒杀",
         "active": 2
     },
     {
@@ -52,7 +52,7 @@
         "label_id": "1",
         "image_index": "",
         "seckill_type":"抢购中",
-        "seckill_text": "更多秒杀",
+        "seckill_text": "预热中",
         "active": 2
     },
     {
@@ -63,7 +63,7 @@
         "label_id": "1",
         "image_index": "",
         "seckill_text": "更多秒杀",
-        "seckill_type":"抢购中",
+        "seckill_type":"预热中",
         "active": 2
     },
     {
@@ -74,7 +74,7 @@
         "label_id": "1",
         "image_index": "",
         "seckill_text": "更多秒杀",
-        "seckill_type":"正在秒杀",
+        "seckill_type":"预热中",
         "active": 1
     },
     {

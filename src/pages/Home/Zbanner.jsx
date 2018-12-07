@@ -9,7 +9,8 @@ class Zbanner extends Component {
     }
     componentDidMount(){
         // this.bannerData();
-        var swiperBanner = new Swiper('.swiperLun', {
+        
+        new Swiper('.swiperLun', {
             loop: true,
             observer: true,
             autoplay:{
