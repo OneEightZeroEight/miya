@@ -15,7 +15,7 @@ class ListHeader extends Component {
             <div className="wrapper">
                 <div className="searchHead">
                     <Link  to='/home/'  replace >
-                        <span 
+                        <span className='left'
                         onClick={this.props.togglelist.bind(this, this.props.showlist)}>
                             <i className="fa fa-chevron-left search" aria-hidden="true"></i>
                         </span>

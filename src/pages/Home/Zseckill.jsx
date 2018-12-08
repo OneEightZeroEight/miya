@@ -105,7 +105,7 @@ class Zseckill extends Component {
 
 
     render() {
-        console.log(this.state)
+        // console.log(this.state)
         return (
             <div>
             <div className="z_secSome">

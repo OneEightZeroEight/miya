@@ -21,8 +21,13 @@ a{
     background-color: #ff4d8e;
     z-index: 50;
     text-align: center;
+    
 }
-
+.left{
+        position:relative;
+        left: -4.133333rem;
+        top:-0.133333rem;
+    }
 .searchHead .icon-back {
     background: url(/resources/images/m/search/icon_back.png) no-repeat center;
     -webkit-background-size: 1rem auto;

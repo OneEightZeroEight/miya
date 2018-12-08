@@ -54,8 +54,8 @@ class Detail extends Component {
         }))
     }
     render() {
-        // console.log(this.state);
-        // console.log(this.props);
+        console.log(this.state);
+        console.log(this.props);
         return (
             <div>
                 {/* 头部 */}
@@ -69,7 +69,7 @@ class Detail extends Component {
                     <BannerAnim prefixCls="banner-user" className='detailbanner' autoPlay>
                         <Element key="demo1">
                             <TweenOne animation={{ x: -30, type: 'from' }}>
-                                <img src={this.props.aa.m_search_pic} alt="0" />
+                                <img src={this.props.aa.image} alt="0" />
                             </TweenOne>
                         </Element>
                         <Element key="demo2">
@@ -168,7 +168,7 @@ class Detail extends Component {
                         <div className={this.state.cur===0?"showblock1 show":"showblock1 hidden"} style={{ minHeight: "535px" }}>
                             <section className="w2 parameters">
                                 <div className="xq">
-                                    <img src={this.props.aa.m_search_pic} alt="1" />
+                                    <img src={this.props.aa.image} alt="1" />
                                     <img src="https://img03.miyabaobei.com/d1/p5/2018/05/30/49/89/4989d82c5c305b48a0741680828b6180637656901.jpg" alt="男童中小童背夏装新款儿童透气薄t打底衫_1" />
                                     <img src="https://img03.miyabaobei.com/d1/p5/2018/05/30/97/01/9701a819c6a9d9364def26ef8ab80a8a637672911.jpg" alt="男童中小童背夏装新款儿童透气薄t打底衫_2" />
                                     <img src="https://img03.miyabaobei.com/d1/p5/2018/05/30/26/73/26731a49f9e6f3814b77bd611d674bdb637681274.jpg" alt="男童中小童背夏装新款儿童透气薄t打底衫_3" />
