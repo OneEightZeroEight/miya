@@ -59,7 +59,7 @@ class User extends Component{
       })
     }
     entry(){
-      console.log(this.state.us)
+      //console.log(this.state.us)
       if(/^1[345678]\d{9}/.test(this.state.us)){
         
         // if(!cookie.load('us',this.state.us)){
@@ -70,11 +70,16 @@ class User extends Component{
           us : this.state.us
         }))
         .then(res=>{
-          console.log(res)
+          console.log(res.data.data)
+          //this.state.msg = res.data.data
+          //this.state.us = res.data.data.us
           this.setState({
-            status : 'user'
+            status : 'user',
+            msg : res.data.data
           })
           this.props.getUs(this.state.us)
+          this.props.getMsg(this.state.msg)
+          console.log(this.state.msg)
         })
       .catch(err=>{
         console.log(err)
@@ -87,8 +92,12 @@ class User extends Component{
     
     back(){
       cookie.remove('us')
+      this.props.getUs('')
+      this.props.getMsg('')
       this.setState({
-        status : 'entry'
+        status : 'entry',
+        msg : '',
+        us : ''
       })
       
     }
@@ -104,11 +113,13 @@ class User extends Component{
 
 
     componentDidMount(){
-      if(cookie.load('us')){
+      if(this.props.us){
         this.setState({
           status : 'user',
-          msg : cookie.load('us')
+          msg : this.props.msg,
+          us : this.props.us
         })
+        console.log(this.props.msg)
       }
     }  
     render(){
@@ -116,6 +127,7 @@ class User extends Component{
           <div>
             {
               (()=>{
+                console.log(this.state.msg)
                 if(this.state.status === 'user'){
                   return <div className="user">
                   <header>
@@ -126,8 +138,8 @@ class User extends Component{
                   <div className="res">
                   <i className="fa fa-user-circle-o" aria-hidden="true"></i>
                     <div>
-                      <span className="name">{this.state.msg.name}</span><br/>
-                      <span className="level">等级：{this.state.msg.level}</span><br/><span className="val">蜜粉值：</span><br/>
+                      <span className="name">{this.state.msg.us}</span><br/>
+                      <span className="level">等级：{this.state.msg.level}</span><br/><span className="val">蜜粉值：{this.state.msg.val}</span><br/>
                     </div>
                   </div>
                   <div className="icon">
@@ -189,6 +201,13 @@ export default connect(state=>{
       dispatch({
         type : 'setUs',
         us
+      })
+    },
+    getMsg(msg){
+      
+      dispatch({
+        type : 'setMsg',
+        msg
       })
     }
   }
