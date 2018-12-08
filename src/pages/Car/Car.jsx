@@ -1,6 +1,6 @@
 import React , {Component} from 'react';
 // import {Route} from 'react-router-dom';
-// import { connect } from 'react-redux';
+import { connect } from 'react-redux';
 import Hfooter from '../../components/Hfooter.jsx';
 // import Hsearch from '../Home/Hsearch.jsx';
 

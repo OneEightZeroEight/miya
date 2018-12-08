@@ -4,7 +4,6 @@ import {Link } from 'react-router-dom'
 // import Hfooter from '../../components/Hfooter.jsx';
 // import ListHeader from './ListHeader.jsx';
 import '../../styles/Lists.scss';
-
 import { Spin, BackTop } from 'antd'; //引入 ant 
 class Lists extends Component {
     constructor(props) {
@@ -31,20 +30,27 @@ class Lists extends Component {
             licur: index,
         }))
         if(this.state.licur===3){
-            // React.axios.get('../jsons/Lists.json')
-            // .then((res)=>{
-            //     // var newdata=res.result
-            //     // newdata.sort(up);
-            //     // //打印排序后的数据到控制台
-            //     // console.log(newdata);
-            //     // //注意sort()在原数据上进行排序，不生成副本
-            //     console.log(res); 
-            // })
-            // .catch((err)=>{
-            //     console.log(err)
-            // })
             let newdetail = this.state.detail;
-            let newarr = newdetail.reverse()
+            let newarr = newdetail.sort((function (o1, o2) {
+                return o1.real_price - o2.real_price;
+              }))
+            // let newarr = newdetail.reverse();倒序brand_id
+            console.log(newarr)
+        }
+        if(this.state.licur===1){
+            let newdetail = this.state.detail;
+            let newarr = newdetail.sort((function (o1, o2) {
+                return o1.brand_id - o2.brand_id;
+              }))
+            // let newarr = newdetail.reverse();倒序
+            console.log(newarr)
+        }
+        if(this.state.licur===2){
+            let newdetail = this.state.detail;
+            let newarr = newdetail.sort((function (o1, o2) {
+                return o1.comm_rate - o2.comm_rate;
+              }))
+            // let newarr = newdetail.reverse();倒序
             console.log(newarr)
         }
     }
@@ -92,7 +98,7 @@ class Lists extends Component {
             .then((res) => {
                 // console.log(res.data)
                 let arr = res.data.pageone;
-                let arr2 = this.state.detail.concat(arr)
+                let arr2 = this.state.detail.concat(arr);
                 this.setState((prevState) => ({
                     detail: arr2,
                     loading: false
