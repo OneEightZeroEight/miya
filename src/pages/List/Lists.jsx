@@ -11,6 +11,7 @@ class Lists extends Component {
         this.props = props;
         console.log(props);
         this.state = {
+            listshow:true,
             licur:0,
             contentClass: "screen_nav",
             detail: [],
@@ -133,7 +134,7 @@ class Lists extends Component {
         console.log(this.state.detailitem)
         console.log(this.props)
         return (
-            <div style={{ display: this.props.showlist.isShowlists ? "block" : "none" }}>
+            <div style={{ display: this.state.listshow ? "block" : "none" }}>
                 <nav className={this.state.contentClass}>
                     <ul>
                         {

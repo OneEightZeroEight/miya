@@ -12,13 +12,18 @@ class Listcar extends Component {
         }
     }
     setmongd(){
-        React.axios.post('http://localhost:1808/goods/addGoods',{
+        React.axios.post('http://localhost:4444/api/car',{
+            method : 'add',
             name : this.props.aa.name,
-            type : this.props.aa.name,
-            desc : this.props.aa.item_highlight,
+            //type : this.props.aa.name,
+            //desc : this.props.aa.item_highlight,
             price : this.props.aa.real_price,
-            imgpath: this.props.aa.image,
-            stock : 1
+            imgUrl: this.props.aa.image,
+            originalPrice : Number(this.props.aa.real_price*0.8),
+            count : this.props.listcart,
+            brand : this.props.aa.brand_name,
+            dataId : Math.random()*1000000
+            
         })
         .then((res)=>{
             console.log(res);
