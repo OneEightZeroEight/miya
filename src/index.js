@@ -49,6 +49,7 @@ const store = createStore((state = {
 
     },
     us:'',
+    msg:'',
     aa:[],
     listcar:false,
     listcarvalue:1,
@@ -74,6 +75,11 @@ const store = createStore((state = {
             return {
               ...state,
               us : action.us
+            };
+        case 'setMsg':
+            return {
+              ...state,
+              msg : action.msg
             };
             case 'togglelistcar':
             return {
