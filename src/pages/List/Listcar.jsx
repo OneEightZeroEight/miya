@@ -11,7 +11,22 @@ class Listcar extends Component {
             value : 1
         }
     }
-
+    setmongd(){
+        React.axios.post('http://localhost:1808/goods/addGoods',{
+            name : this.props.aa.name,
+            type : this.props.aa.name,
+            desc : this.props.aa.item_highlight,
+            price : this.props.aa.real_price,
+            imgpath: this.props.aa.image,
+            stock : 1
+        })
+        .then((res)=>{
+            console.log(res);
+        })
+        .catch((err)=>{
+            console.log(err);
+        })
+    }
     render() {
         return (
             <div>
@@ -21,7 +36,7 @@ class Listcar extends Component {
                     <div className="tk-title">
                         <div id="typeInfoBox">
                             <div className="selProImg">
-                                <img src={this.props.aa.m_search_pic} alt="" />
+                                <img src={this.props.aa.image} alt="" />
                             </div>
                             <div className="fl selInfo">
                             <span className="selPrice">{this.props.aa.real_price}</span>
@@ -66,7 +81,7 @@ class Listcar extends Component {
                         </span>
                     </p>
                     <div className="tk-btnGroup defaultBlock" onClick={this.props.togglelistcar.bind(this)}>
-                         <button id="addToCart">确定</button>
+                         <button id="addToCart" onClick={this.setmongd.bind(this)}>确定</button>
                     </div>
                     <input type="hidden" id="item_id" value="2957745" />
                 </div>
