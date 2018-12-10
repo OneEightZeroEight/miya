@@ -63,7 +63,7 @@ class Lists extends Component {
                 let all = document.documentElement.scrollHeight;
                 // console.log(h,all);
                 if (all-h===667) {
-                React.axios.get('./Lists.json')
+                React.axios.get('../jsons/Lists.json')
                     .then((res) => {
                         // console.log(res.data)
                         let arr3 = res.data.pagetwo;
@@ -94,7 +94,7 @@ class Lists extends Component {
         
     }
     getdetail() {
-        React.axios.get('./Lists.json')
+        React.axios.get('../jsons/Lists.json')
             .then((res) => {
                 // console.log(res.data)
                 let arr = res.data.pageone;

@@ -16,11 +16,11 @@ class Zbady extends Component {
                 <h3>给孩子买安心，蜜芽100%正品保证</h3>
             </div>
             <div className="BabyUnlike">
-                <div className="firstImg"><img src={require("./static/media/baby1.jpg")} alt="Zrecom"/></div>
-                <div><img src={require("./static/media/baby3.jpg")} alt="Zrecom"/></div>
-                <div><img src={require("./static/media/baby5.jpg")} alt="Zrecom"/></div>
-                <div><img src={require("./static/media/baby3.jpg")} alt="Zrecom"/></div>
-                <div><img src={require("./static/media/baby5.jpg")} alt="Zrecom"/></div>
+                <div className="firstImg"><img src={require("../../staic/Zimg/baby1.jpg")} alt="Zrecom"/></div>
+                <div><img src={require("../../staic/Zimg/baby2.jpg")} alt="Zrecom"/></div>
+                <div><img src={require("../../staic/Zimg/baby3.jpg")} alt="Zrecom"/></div>
+                <div><img src={require("../../staic/Zimg/baby4.jpg")} alt="Zrecom"/></div>
+                <div><img src={require("../../staic/Zimg/baby5.jpg")} alt="Zrecom"/></div>
             </div>
          </div>
         )
