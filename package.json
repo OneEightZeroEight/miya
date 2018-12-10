@@ -109,10 +109,10 @@
       "^react-native$": "react-native-web",
       "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
     },
-    "proxy" :{
-      "/app" :{
-        "target" : "http://localhost:1808",
-        "changeOrigin" :true
+    "proxy": {
+      "/app": {
+        "target": "http://localhost:1808",
+        "changeOrigin": true
       }
     },
     "moduleFileExtensions": [
