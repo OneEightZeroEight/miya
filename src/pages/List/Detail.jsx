@@ -5,7 +5,7 @@ import '../../styles/Detail.scss';
 import Icon from 'antd'; 
 import jquery from 'jquery';
 import BannerAnim, { Element } from 'rc-banner-anim';
-import TweenOne from 'rc-tween-one';
+import TweenOne from 'rc-tween-one'; //引入 antd 轮播图
 import 'rc-banner-anim/assets/index.css';
 // const BgElement = Element.BgElement;
 import Listcar from './Listcar.jsx'
