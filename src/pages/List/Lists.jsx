@@ -172,10 +172,10 @@ class Lists extends Component {
                                                     <div className="gsh-mark">自营</div>
                                                 </div>
                                                 <div className="mia_price">
-                                                    <span className="mia_price_title"></span><span className="price_icon">¥</span><span className="mia_price_con">{item.real_price}</span>
+                                                    <span className="mia_price_title"></span><span className="price_icon">￥</span><span className="mia_price_con">{item.real_price}</span>
                                                 </div>
                                                 <div className="market_price">
-                                                    <span className="market_price_title"></span><span className="price_icon">¥</span><del className="market_price_con">{item.market_price}</del>
+                                                    <span className="market_price_title"></span><span className="price_icon">￥</span><del className="market_price_con">{item.market_price}</del>
                                                 </div>
                                             </div>
                                         </div>

@@ -8,17 +8,35 @@ class Listcar extends Component {
         // this.props = props;
         console.log(props);
         this.state = {
-            value : 1
+            value : 1,
+            count : ''
         }
     }
     setmongd(){
-        React.axios.post('http://localhost:1808/goods/addGoods',{
+      // console.log({
+      //   name : this.props.aa.name,
+      //       //type : this.props.aa.name,
+      //       //desc : this.props.aa.item_highlight,
+      //       price : this.props.aa.real_price,
+      //       imgUrl: this.props.aa.image,
+      //       originalPrice : Number(this.props.aa.real_price*0.8),
+      //       count : this.props.listcart,
+      //       brand : this.props.aa.brand_name,
+      //       dataId : Math.floor(Math.random()*1000000)
+      // })
+        React.axios.post('http://localhost:4444/api/car',{
+            us : this.props.us,
+            method : 'add',
             name : this.props.aa.name,
-            type : this.props.aa.name,
-            desc : this.props.aa.item_highlight,
+            //type : this.props.aa.name,
+            //desc : this.props.aa.item_highlight,
             price : this.props.aa.real_price,
-            imgpath: this.props.aa.image,
-            stock : 1
+            imgUrl: this.props.aa.image,
+            originalPrice : parseInt(this.props.aa.real_price*0.9),
+            count : 1,
+            brand : this.props.aa.brand_name,
+            dataId : Math.floor(Math.random()*1000000)
+            
         })
         .then((res)=>{
             console.log(res);
