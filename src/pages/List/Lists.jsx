@@ -11,7 +11,6 @@ class Lists extends Component {
         this.props = props;
         console.log(props);
         this.state = {
-            listshow:true,
             licur:0,
             contentClass: "screen_nav",
             detail: [],
@@ -134,7 +133,7 @@ class Lists extends Component {
         console.log(this.state.detailitem)
         console.log(this.props)
         return (
-            <div style={{ display: this.state.listshow ? "block" : "none" }}>
+            <div style={{ display: this.props.showlist.isShowlists ? "block" : "none" }}>
                 <nav className={this.state.contentClass}>
                     <ul>
                         {
@@ -173,10 +172,10 @@ class Lists extends Component {
                                                     <div className="gsh-mark">自营</div>
                                                 </div>
                                                 <div className="mia_price">
-                                                    <span className="mia_price_title"></span><span className="price_icon">¥</span><span className="mia_price_con">{item.real_price}</span>
+                                                    <span className="mia_price_title"></span><span className="price_icon">￥</span><span className="mia_price_con">{item.real_price}</span>
                                                 </div>
                                                 <div className="market_price">
-                                                    <span className="market_price_title"></span><span className="price_icon">¥</span><del className="market_price_con">{item.market_price}</del>
+                                                    <span className="market_price_title"></span><span className="price_icon">￥</span><del className="market_price_con">{item.market_price}</del>
                                                 </div>
                                             </div>
                                         </div>
