@@ -40,7 +40,7 @@ class Listdetaill extends Component {
         // console.log(this.state.listnav)
     }
     getJson() {
-        React.axios.get('./jsons/list.json')
+        React.axios.get('./list.json')
             .then((res) => {
                 // console.log(res.data.datas)
                 this.setState((prevState) => ({
