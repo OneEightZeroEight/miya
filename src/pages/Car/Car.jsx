@@ -6,7 +6,7 @@ import Hfooter from '../../components/Hfooter.jsx';
 
 import '../.././styles/car.scss'
 
-// import Axios from 'axios'
+import Axios from 'axios'
 
 import qs from 'qs'
 
