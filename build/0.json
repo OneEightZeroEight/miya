@@ -1,0 +1,389 @@
+{
+    "p_info": {
+        "pid": "77453",
+        "tab_time": "21:00",
+        "start_time": "2018/12/05 21:00:00",
+        "end_time": "2018/12/06 20:59:59",
+        "label_id": "1",
+        "image_index": "",
+        "seckill_text": "更多秒杀",
+        "param": "2540581-2499063-2491922-2633840-2499142-2874096-2824366-2879289-2927199-1657630-2691085-2943131-2499146-2604176-2954670-2956855-1777960-2856914-2957216-2463088-2864412-2930672-2478554-1800396"
+    },
+    "item_list": [
+        {
+            "item_id": "2540581",
+            "title": "日本花王牙膏3支",
+            "short_info": "清爽薄荷 清洁口腔",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2017/09/28/a2/5e/a25e444087713e20660ae13ce9a3f225925596299.jpg",
+            "active_price": "29.90",
+            "market_price": "89.00",
+            "warehouse_type": "7",
+            "brand_id": "3234",
+            "warehouse": [
+                {
+                    "type": "7",
+                    "text": "全球购"
+                }
+            ],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2499063",
+            "title": "Beauty Buffet Q10牛奶身体乳400ml",
+            "short_info": "嫩白 从这里开始！",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2017/08/19/f2/0e/f20e82b3fc1e1905c5729124885b1a72113507570.jpg",
+            "active_price": "35.00",
+            "market_price": "159.00",
+            "warehouse_type": "5",
+            "brand_id": "6269",
+            "warehouse": [
+                {
+                    "type": "5",
+                    "text": "韩国直邮",
+                    "name": "hg"
+                }
+            ],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2491922",
+            "title": "呼吸泡泡面膜组合20片",
+            "short_info": "使皮肤亮白清透 改善痘痘肌",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2017/07/17/3d/6d/3d6d920244f7a077ec273156cad5e02d604913393.jpg",
+            "active_price": "62.00",
+            "market_price": "199.00",
+            "warehouse_type": "5",
+            "brand_id": "2483",
+            "warehouse": [
+                {
+                    "type": "5",
+                    "text": "香港直邮",
+                    "name": "xg"
+                }
+            ],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2633840",
+            "title": "Aquafresh按压式牙膏3支",
+            "short_info": "防蛀/固齿　口气清新",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2018/08/02/7e/c0/7ec0ac7bc06d028f6826000339ef4d5e016895443.jpg",
+            "active_price": "45.00",
+            "market_price": "199.00",
+            "warehouse_type": "10",
+            "brand_id": "234",
+            "warehouse": [],
+            "activity_string": false
+        },
+        {
+            "item_id": "2499142",
+            "title": "德国小甘菊唇膏2支",
+            "short_info": "保湿滋润双唇 不油腻",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2018/10/08/40/2f/402fea9cde57d1f251ec9bcc2914753d865107053.jpg",
+            "active_price": "48.00",
+            "market_price": "159.00",
+            "warehouse_type": "7",
+            "brand_id": "435",
+            "warehouse": [
+                {
+                    "type": "7",
+                    "text": "全球购"
+                }
+            ],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2874096",
+            "title": "美国凡士林果酸保湿身体乳",
+            "short_info": "400ml美白嫩肤去鸡皮 全身可用",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/08/02/31/31/313187aa598cae915c5ec1be54d83f17784403243.jpg",
+            "active_price": "42.00",
+            "market_price": "89.00",
+            "warehouse_type": "5",
+            "brand_id": "8125",
+            "warehouse": [
+                {
+                    "type": "5",
+                    "text": "香港直邮",
+                    "name": "xg"
+                }
+            ],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2824366",
+            "title": "日本狮王牙膏130g3支",
+            "short_info": "让你的牙齿得到彻底的清洁",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2018/06/05/d1/f6/d1f605decda01e7a9681d3c4f391552d814059548.jpg",
+            "active_price": "45.00",
+            "market_price": "89.00",
+            "warehouse_type": "7",
+            "brand_id": "124",
+            "warehouse": [
+                {
+                    "type": "7",
+                    "text": "全球购"
+                }
+            ],
+            "activity_string": false
+        },
+        {
+            "item_id": "2879289",
+            "title": "德国小甘菊护手霜75ml*2支",
+            "short_info": "深层呵护双手 清爽不油腻",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2018/08/07/19/34/1934288f141f5dc8fa70e2b52397a394290624941.jpg",
+            "active_price": "46.00",
+            "market_price": "60.00",
+            "warehouse_type": "10",
+            "brand_id": "435",
+            "warehouse": [],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2927199",
+            "title": "匹奇多功能卷发棒干湿两用",
+            "short_info": "一机3用，打造多种发型",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/12/05/41/ed/41edbb79f94f226b224c9e6ecb09dfcf948607253.jpg",
+            "active_price": "59.00",
+            "market_price": "189.00",
+            "warehouse_type": "3",
+            "brand_id": "11536",
+            "warehouse": [],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "1657630",
+            "title": "澳洲G&M绵羊油250g*3盒",
+            "short_info": "澳洲本土家喻户晓，补水保湿",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/09/12/65/f0/65f0e135e4f75b1ce8b54209bf7eeb74295152887.jpg",
+            "active_price": "82.00",
+            "market_price": "218.00",
+            "warehouse_type": "5",
+            "brand_id": "959",
+            "warehouse": [
+                {
+                    "type": "5",
+                    "text": "香港直邮",
+                    "name": "xg"
+                }
+            ],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2691085",
+            "title": "公主魔法香气无硅洗护套装",
+            "short_info": "600ml*2瓶 告别毛糙 清甜花香",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/02/07/71/2e/712e003e36850be86a0b20db120dcd04909859297.jpg",
+            "active_price": "79.00",
+            "market_price": "239.00",
+            "warehouse_type": "7",
+            "brand_id": "9799",
+            "warehouse": [
+                {
+                    "type": "7",
+                    "text": "全球购"
+                }
+            ],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2943131",
+            "title": "雅诗兰黛新款蓝光眼光5ml*3瓶",
+            "short_info": "5ml*3瓶等于正装 回购率高",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/03/25/88/3c/883c861ed12480e4fb40b726233b77dc673158001.jpg",
+            "active_price": "379.00",
+            "market_price": "438.00",
+            "warehouse_type": "5",
+            "brand_id": "2586",
+            "warehouse": [
+                {
+                    "type": "5",
+                    "text": "香港直邮",
+                    "name": "xg"
+                }
+            ],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2499146",
+            "title": "美体小铺生姜洗发水2瓶",
+            "short_info": "400ml*2瓶 清爽控油减缓脱发",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/09/07/be/9e/be9e24b8cee82a2d43398a83bc855160096569480.jpg",
+            "active_price": "159.00",
+            "market_price": "298.00",
+            "warehouse_type": "7",
+            "brand_id": "397",
+            "warehouse": [
+                {
+                    "type": "7",
+                    "text": "全球购"
+                }
+            ],
+            "activity_string": false
+        },
+        {
+            "item_id": "2604176",
+            "title": "韩国JAYJUN水光面膜组合",
+            "short_info": "15片 多种组合多种选择",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2017/11/21/60/bd/60bd8fbef312a979a2263416e52b071e473988138.jpg",
+            "active_price": "109.00",
+            "market_price": "299.00",
+            "warehouse_type": "11",
+            "brand_id": "2480",
+            "warehouse": [],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2954670",
+            "title": "大创润肤水乳精华三件套",
+            "short_info": "平价亲民 怎么用都不心疼",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2018/11/14/cc/7e/cc7e657d87130fcc476536462e60965f820451179.jpg",
+            "active_price": "59.00",
+            "market_price": "119.00",
+            "warehouse_type": "7",
+            "brand_id": "6123",
+            "warehouse": [
+                {
+                    "type": "7",
+                    "text": "全球购"
+                }
+            ],
+            "activity_string": false
+        },
+        {
+            "item_id": "2956855",
+            "title": "德玛贝尔医美凝胶面膜1000g套装",
+            "short_info": "医美级产品 套装可用30-40次",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/11/11/55/27/55271eb9280ad76161d62d74cf87951c111987379.jpg",
+            "active_price": "199.00",
+            "market_price": "389.00",
+            "warehouse_type": "7",
+            "brand_id": "11625",
+            "warehouse": [
+                {
+                    "type": "7",
+                    "text": "全球购"
+                }
+            ],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "1777960",
+            "title": "雅漾舒护活泉水喷雾2支",
+            "short_info": "喷雾保湿补水滋润",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2017/11/06/f2/7f/f27f9807b9c24b720ad530f3699d4226581459714.jpg",
+            "active_price": "159.00",
+            "market_price": "208.00",
+            "warehouse_type": "7",
+            "brand_id": "907",
+            "warehouse": [
+                {
+                    "type": "7",
+                    "text": "全球购"
+                }
+            ],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2856914",
+            "title": "日本COW沐浴露450ml*2瓶",
+            "short_info": "牛奶皂香型 滋养嫩白肌肤",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/07/16/00/ea/00ea305cda25c4dbebbe3b5bdc0fa0b0318847694.jpg",
+            "active_price": "65.00",
+            "market_price": "129.00",
+            "warehouse_type": "7",
+            "brand_id": "129",
+            "warehouse": [
+                {
+                    "type": "7",
+                    "text": "全球购"
+                }
+            ],
+            "activity_string": false
+        },
+        {
+            "item_id": "2957216",
+            "title": "日本石泽研究所洁面乳100g",
+            "short_info": "特含小苏打成分 温和解决清洁",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/11/10/2a/7e/2a7efa002d0a3dc83c60a23eeb0b68c8424274447.jpg",
+            "active_price": "83.00",
+            "market_price": "129.00",
+            "warehouse_type": "7",
+            "brand_id": "4759",
+            "warehouse": [
+                {
+                    "type": "7",
+                    "text": "全球购"
+                }
+            ],
+            "activity_string": false
+        },
+        {
+            "item_id": "2463088",
+            "title": "韩国雪花秀滋阴水乳2件套",
+            "short_info": "深入肌底，补充阴气，滋养肌肤",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2017/08/12/de/0a/de0abc0f8281321b23038ff5128bc6d0075716076.jpg",
+            "active_price": "578.00",
+            "market_price": "1180.00",
+            "warehouse_type": "11",
+            "brand_id": "1781",
+            "warehouse": [],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2864412",
+            "title": "日本柚子味卸妆乳180ml",
+            "short_info": "温和不油腻，清洁力强",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2018/07/23/98/e2/98e2f101d02ed0bd4391155854c3ec71373789844.jpg",
+            "active_price": "75.00",
+            "market_price": "139.00",
+            "warehouse_type": "10",
+            "brand_id": "1330",
+            "warehouse": [],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2930672",
+            "title": "韩国春雨蜂蜜水乳组合",
+            "short_info": "为肌肤带来春雨般滋润与呵护",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2018/09/26/02/68/026872395fa62c60bbed882a2a34cd2c441441832.jpg",
+            "active_price": "129.00",
+            "market_price": "199.00",
+            "warehouse_type": "11",
+            "brand_id": "2591",
+            "warehouse": [],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2478554",
+            "title": "雪花秀滋阴润燥精华60ml",
+            "short_info": "补水保湿 滋润肌肤",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2017/08/18/56/16/5616858a77d4c0faba6f5d1abc7c4ad5397127478.jpg",
+            "active_price": "369.00",
+            "market_price": "799.00",
+            "warehouse_type": "11",
+            "brand_id": "1781",
+            "warehouse": [],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "1800396",
+            "title": "香奈儿五号身体乳200ml",
+            "short_info": "轻柔质感如同薄纱 柔嫩细致",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2017/05/11/bb/75/bb758e22f7e0d2d2eb133871e2d0f101393809161.jpg",
+            "active_price": "389.00",
+            "market_price": "530.00",
+            "warehouse_type": "5",
+            "brand_id": "2522",
+            "warehouse": [
+                {
+                    "type": "5",
+                    "text": "法国直邮",
+                    "name": "fg"
+                }
+            ],
+            "activity_string": "直降 "
+        }
+    ],
+    "relation_list": []
+}

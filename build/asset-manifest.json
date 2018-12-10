@@ -8,7 +8,8 @@
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
   "static/media/baby5.jpg": "/static/media/baby5.679f235b.jpg",
-  "static/media/car.scss": "/static/media/fontawesome-webfont.912ec66d.svg",
+  "static/media/car.scss": "/static/media/fontawesome-webfont.af7ae505.woff2",
+  "static/media/home.scss": "/static/media/fontawesome-webfont.acf3dcb7.svg",
   "static/media/banner1.jpg": "/static/media/banner1.7f6685e4.jpg",
   "static/media/banner2.jpg": "/static/media/banner2.3b60b265.jpg",
   "static/media/banner3.jpg": "/static/media/banner3.fa5c2156.jpg",
@@ -16,10 +17,9 @@
   "static/media/banner5.jpg": "/static/media/banner5.c3cf4497.jpg",
   "static/media/baby1.jpg": "/static/media/baby1.663eb9b8.jpg",
   "static/media/baby3.jpg": "/static/media/baby3.c5e8a4ea.jpg",
-  "static/media/home.scss": "/static/media/fontawesome-webfont.acf3dcb7.svg",
   "static/css/main.c536945e.chunk.css.map": "/static/css/main.c536945e.chunk.css.map",
   "static/css/1.2168e445.chunk.css.map": "/static/css/1.2168e445.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.181c153ceb73396c2fa5451ba55d2d80.js": "/precache-manifest.181c153ceb73396c2fa5451ba55d2d80.js",
+  "precache-manifest.d6b2d97b671650b4806e52c551ac77d7.js": "/precache-manifest.d6b2d97b671650b4806e52c551ac77d7.js",
   "service-worker.js": "/service-worker.js"
 }

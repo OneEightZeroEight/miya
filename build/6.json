@@ -1,0 +1,267 @@
+{
+    "p_info": {
+        "pid": "77477",
+        "tab_time": "15:00",
+        "start_time": "2018/12/06 15:00:00",
+        "end_time": "2018/12/07 14:59:59",
+        "label_id": "1",
+        "image_index": "",
+        "seckill_text": "更多秒杀",
+        "param": "2772620-2667537-2812353-2953652-2851660-2703870-2954041-2571260-2913199-2914364-2827423-1679051-2646024-1307185-1688702-1523328-2953645-2954681-2865241"
+    },
+    "item_list": [
+        {
+            "item_id": "2772620",
+            "title": "进口混合什锦糖零食大礼包500g",
+            "short_info": "俄罗斯进口 酥脆可口",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2018/04/19/27/7a/277ad83a1213b6894b88b132bf82df27087815191.jpg",
+            "active_price": "21.90",
+            "market_price": "39.90",
+            "warehouse_type": "3",
+            "brand_id": "8525",
+            "warehouse": [],
+            "activity_string": false
+        },
+        {
+            "item_id": "2667537",
+            "title": "德运脱脂高钙成人奶粉2袋",
+            "short_info": "脱脂、高钙、速溶，全家适用",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2018/11/20/63/d5/63d509c45eb55be15d2ecb5638892b60858035371.jpg",
+            "active_price": "108.00",
+            "market_price": "299.00",
+            "warehouse_type": "10",
+            "brand_id": "716",
+            "warehouse": [],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2812353",
+            "title": "俄罗斯进口奥利奥威化1000g",
+            "short_info": "浓浓的奥利奥味，酥脆的口感",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/05/25/d1/46/d1461b93443bd9b9ca8e7883061a017a331598085.jpg",
+            "active_price": "38.80",
+            "market_price": "49.00",
+            "warehouse_type": "3",
+            "brand_id": "8986",
+            "warehouse": [],
+            "activity_string": false
+        },
+        {
+            "item_id": "2953652",
+            "title": "瑞士莲软心巧克力球多口味600g",
+            "short_info": "美味寻材，选料认真",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2018/11/12/7a/d4/7ad4472c42b1f8716fecda5649146bbe183728419.jpg",
+            "active_price": "96.00",
+            "market_price": "199.00",
+            "warehouse_type": "11",
+            "brand_id": "1994",
+            "warehouse": [],
+            "activity_string": false
+        },
+        {
+            "item_id": "2851660",
+            "title": "日本进口水果麦片500g*2",
+            "short_info": "早餐新选择 美味加营养",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/09/27/5e/86/5e8679a5ef3db639ebd65c97ba57b904175044035.jpg",
+            "active_price": "89.00",
+            "market_price": "120.00",
+            "warehouse_type": "3",
+            "brand_id": "10781",
+            "warehouse": [],
+            "activity_string": false
+        },
+        {
+            "item_id": "2703870",
+            "title": "德国二宝棒棒糖20支*2袋",
+            "short_info": "四种水果口味丰富美味享受",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/03/03/1a/b1/1ab1e7727943886e9577eb7541d1aea9483428750.jpg",
+            "active_price": "55.00",
+            "market_price": "299.00",
+            "warehouse_type": "10",
+            "brand_id": "9044",
+            "warehouse": [],
+            "activity_string": false
+        },
+        {
+            "item_id": "2954041",
+            "title": "丽芝士印尼进口威化350g*2罐",
+            "short_info": "口感酥脆 入口即化",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/11/13/2e/33/2e334eb204494d838abc1a576eb7fc87886263141.jpg",
+            "active_price": "47.60",
+            "market_price": "76.00",
+            "warehouse_type": "3",
+            "brand_id": "2176",
+            "warehouse": [],
+            "activity_string": false
+        },
+        {
+            "item_id": "2571260",
+            "title": "榙榙咸鸭蛋黄饼干500g",
+            "short_info": "精心烘焙更好口感",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2017/10/31/87/d6/87d6ec6357416f7d08c3d22b9d575627412266331.jpg",
+            "active_price": "29.90",
+            "market_price": "39.00",
+            "warehouse_type": "3",
+            "brand_id": "4572",
+            "warehouse": [],
+            "activity_string": false
+        },
+        {
+            "item_id": "2913199",
+            "title": "俄罗斯进口小农庄威化500g",
+            "short_info": "5层奶油巧克力夹心",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/09/18/fe/9d/fe9db9ccc91917d38ed8e1f71fff46fb549377823.jpg",
+            "active_price": "26.90",
+            "market_price": "38.00",
+            "warehouse_type": "3",
+            "brand_id": "8986",
+            "warehouse": [],
+            "activity_string": false
+        },
+        {
+            "item_id": "2914364",
+            "title": "芭提娅果汁饮料230ml*10听",
+            "short_info": "果汁口感爽甜，果味浓郁",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2018/09/21/e0/93/e0939e0d3e4284c002d63340a70312c5052144235.jpg",
+            "active_price": "39.90",
+            "market_price": "79.00",
+            "warehouse_type": "3",
+            "brand_id": "11523",
+            "warehouse": [],
+            "activity_string": false
+        },
+        {
+            "item_id": "2827423",
+            "title": "亚米水果味棒棒糖50支*2袋",
+            "short_info": "补充维生素及营养",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2018/06/07/b6/c7/b6c7aa61784013b14cae9dce4dfe64a4568999887.jpg",
+            "active_price": "89.00",
+            "market_price": "129.00",
+            "warehouse_type": "5",
+            "brand_id": "438",
+            "warehouse": [
+                {
+                    "type": "5",
+                    "text": "香港直邮",
+                    "name": "xg"
+                }
+            ],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "1679051",
+            "title": "菲利普维尚婴幼儿核桃油套装",
+            "short_info": "富含dha 营养易吸收",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/08/31/aa/af/aaaf4431f6b88beedf8145e41804f9a9884149215.jpg",
+            "active_price": "256.00",
+            "market_price": "406.00",
+            "warehouse_type": "3",
+            "brand_id": "1078",
+            "warehouse": [],
+            "activity_string": false
+        },
+        {
+            "item_id": "2646024",
+            "title": "蜂蜜香烤混合装坚果仁850g",
+            "short_info": "4款坚果 蜂蜜烘烤更酥脆",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2018/01/02/a7/73/a7731d1c8227950a6ebf883ae3132482604415841.jpg",
+            "active_price": "138.00",
+            "market_price": "210.00",
+            "warehouse_type": "11",
+            "brand_id": "7997",
+            "warehouse": [],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "1307185",
+            "title": "美国亚米水果糖40支",
+            "short_info": "补充维生素及其他营养",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/07/04/e8/5d/e85ded728a9dc058b1a3c1b635db1b28803457255.jpg",
+            "active_price": "52.00",
+            "market_price": "109.00",
+            "warehouse_type": "5",
+            "brand_id": "438",
+            "warehouse": [
+                {
+                    "type": "5",
+                    "text": "香港直邮",
+                    "name": "xg"
+                }
+            ],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "1688702",
+            "title": "丽贵维生素软糖300粒,",
+            "short_info": "补充儿童、宝宝营养日常营养",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2018/07/16/99/37/9937e12885e530de8558721d4391fc85108229619.jpg",
+            "active_price": "119.00",
+            "market_price": "290.00",
+            "warehouse_type": "5",
+            "brand_id": "553",
+            "warehouse": [
+                {
+                    "type": "5",
+                    "text": "香港直邮",
+                    "name": "xg"
+                }
+            ],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "1523328",
+            "title": "丽贵220粒+300粒软糖",
+            "short_info": "补充儿童日常营养",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2018/11/03/04/48/0448ff2721982e065b80de9738bc057b281218012.jpg",
+            "active_price": "228.00",
+            "market_price": "530.00",
+            "warehouse_type": "5",
+            "brand_id": "553",
+            "warehouse": [
+                {
+                    "type": "5",
+                    "text": "香港直邮",
+                    "name": "xg"
+                }
+            ],
+            "activity_string": "直降 "
+        },
+        {
+            "item_id": "2953645",
+            "title": "歌帝梵多种口味27粒礼盒装",
+            "short_info": "送礼佳品 满足味蕾享受",
+            "pic": "https://img05.miyabaobei.com/d1/p5/2018/11/12/fb/87/fb873471b22fba4077d458ade6da2017196689051.jpg",
+            "active_price": "139.00",
+            "market_price": "269.00",
+            "warehouse_type": "11",
+            "brand_id": "2283",
+            "warehouse": [],
+            "activity_string": false
+        },
+        {
+            "item_id": "2954681",
+            "title": "柬埔寨香米10斤",
+            "short_info": "原生态进口茉莉香米",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2018/11/13/da/fe/dafeb8a070fc3dae10d2b80fa060330b853716235.jpg",
+            "active_price": "119.00",
+            "market_price": "188.00",
+            "warehouse_type": "3",
+            "brand_id": "11646",
+            "warehouse": [],
+            "activity_string": false
+        },
+        {
+            "item_id": "2865241",
+            "title": "CMP雪绒花进口蜂蜜227g",
+            "short_info": "吉尔吉斯斯坦原装进口",
+            "pic": "https://img06.miyabaobei.com/d1/p5/2018/07/24/fe/fe/fefe551f369d153be02e0d27f7dc760d138871117.jpg",
+            "active_price": "315.00",
+            "market_price": "358.00",
+            "warehouse_type": "3",
+            "brand_id": "11288",
+            "warehouse": [],
+            "activity_string": false
+        }
+    ],
+    "relation_list": []
+}
